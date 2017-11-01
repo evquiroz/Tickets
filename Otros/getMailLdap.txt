@@ -1,0 +1,15 @@
+http://stackoverflow.com/questions/785527/get-mail-address-from-activedirectory
+
+// get a DirectorySearcher object
+DirectorySearcher search = new DirectorySearcher(entry);
+
+// specify the search filter
+search.Filter = "(&(objectClass=user)(anr=" + account + "))";
+
+// specify which property values to return in the search
+search.PropertiesToLoad.Add("givenName");   // first name
+search.PropertiesToLoad.Add("sn");          // last name
+search.PropertiesToLoad.Add("mail");        // smtp mail address
+
+// perform the search
+SearchResult result = search.FindOne();

@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:CTM_People_GetInfo_WS">
+   <soapenv:Header>
+      <urn:AuthenticationInfo>
+         <urn:userName>qwe123</urn:userName>
+         <urn:password>password</urn:password>
+         <urn:timeZone>?</urn:timeZone>
+      </urn:AuthenticationInfo>
+   </soapenv:Header>
+
+   <soapenv:Body>
+      <urn:CTM_GetPeopleInfo>
+         <urn:Qualification>'usuario'="flozada"</urn:Qualification>
+         <urn:startRecord>0</urn:startRecord>
+         <urn:maxLimit>20</urn:maxLimit>
+      </urn:CTM_GetPeopleInfo>
+   </soapenv:Body>
+</soapenv:Envelope>

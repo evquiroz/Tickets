@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:HPD_IncidentInterface_Create_WS">
+
+   <soapenv:Header>
+      <urn:AuthenticationInfo>
+         <urn:userName>siem</urn:userName>
+         <urn:password>qwe123</urn:password>
+      </urn:AuthenticationInfo>
+   </soapenv:Header>
+   <soapenv:Body>
+
+      <urn:helpDeskSubmitService>
+
+
+         <urn:Assigned_Group>REMEDY ADMIN</urn:Assigned_Group>
+         <urn:Assigned_Support_Company>GENTERA</urn:Assigned_Support_Company>
+         <urn:Assigned_Support_Organization>SOPORTE A COLABORADORES</urn:Assigned_Support_Organization>
+         <urn:Categorization_Tier_1>FALLA</urn:Categorization_Tier_1>
+         <urn:Categorization_Tier_2>CONECTIVIDAD</urn:Categorization_Tier_2>
+         <urn:Categorization_Tier_3>VPN TERCEROS</urn:Categorization_Tier_3>
+         <urn:First_Name>USUARIO</urn:First_Name>
+         <urn:Impact>4-Minor/Localized</urn:Impact>
+         <urn:Last_Name>SIEM</urn:Last_Name>
+         <urn:Product_Categorization_Tier_1>ATM</urn:Product_Categorization_Tier_1>
+         <urn:Product_Categorization_Tier_2>SOFTWARE CORE</urn:Product_Categorization_Tier_2>
+         <urn:Product_Categorization_Tier_3>DIRECTORIO ACTIVO</urn:Product_Categorization_Tier_3>
+         <urn:Reported_Source>Other</urn:Reported_Source>
+         <urn:Service_Type>User Service Restoration</urn:Service_Type>
+         <urn:Status>New</urn:Status>
+         <urn:Action>CREATE</urn:Action>
+         <urn:Summary>Prueba de incidente con web service 3</urn:Summary>
+         <urn:Urgency>2-High</urn:Urgency>
+
+      </urn:helpDeskSubmitService>
+
+   </soapenv:Body>
+
+</soapenv:Envelope>
+
+
+-------------------------------------------
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WOI_WorkOrderInterface_Create_WS">
+
+   <soapenv:Header>
+      <urn:AuthenticationInfo>
+         <urn:userName>qwe123</urn:userName>
+         <urn:password>password</urn:password>
+      </urn:AuthenticationInfo>
+   </soapenv:Header>
+
+   <soapenv:Body>
+
+      <urn:workOrderSubmitService>
+         <urn:Submitter>siem</urn:Submitter>
+         <urn:Status>New</urn:Status>
+         <urn:Short_Description>Test of WO via web service</urn:Short_Description>
+         <urn:RequesterLoginID>$USER$</urn:RequesterLoginID>
+         <urn:Summary>TEST WO</urn:Summary>
+         <urn:Categorization_Tier_1>SOLICITUD</urn:Categorization_Tier_1>
+         <urn:Categorization_Tier_2>ACTUALIZACION</urn:Categorization_Tier_2>
+         <urn:Categorization_Tier_3>APLICACION</urn:Categorization_Tier_3>
+         <urn:z1D_Action>CREATE</urn:z1D_Action>
+         <urn:Detailed_Description>Test of WO via web service</urn:Detailed_Description>
+         <urn:Product_Cat_Tier_1_2_>SERVICIOS</urn:Product_Cat_Tier_1_2_>
+         <urn:Product_Cat_Tier_2__2_>SOFTWARE BACKOFFICE</urn:Product_Cat_Tier_2__2_>
+         <urn:Product_Cat_Tier_3__2_>APLICACION</urn:Product_Cat_Tier_3__2_>
+         <urn:Support_Organization>SOPORTE A COLABORADORES</urn:Support_Organization>
+         <urn:Support_Company>GENTERA</urn:Support_Company>
+         <urn:Support_Group_Name>REMEDY ADMIN</urn:Support_Group_Name>
+         <urn:Customer_Person_ID>PPL000000028790</urn:Customer_Person_ID>
+      </urn:workOrderSubmitService>
+
+   </soapenv:Body>
+
+</soapenv:Envelope>

@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:HPD_IncidentInterface_Create_WS">
+
+   <soapenv:Header>
+      <urn:AuthenticationInfo>
+         <urn:userName>siem</urn:userName>
+         <urn:password>qwe123</urn:password>
+      </urn:AuthenticationInfo>
+   </soapenv:Header>
+   <soapenv:Body>
+
+      <urn:helpDeskSubmitService>
+
+
+         <urn:Assigned_Group>REMEDY ADMIN</urn:Assigned_Group>
+         <urn:Assigned_Support_Company>GENTERA</urn:Assigned_Support_Company>
+         <urn:Assigned_Support_Organization>SOPORTE A COLABORADORES</urn:Assigned_Support_Organization>
+         <urn:Categorization_Tier_1>FALLA</urn:Categorization_Tier_1>
+         <urn:Categorization_Tier_2>CONECTIVIDAD</urn:Categorization_Tier_2>
+         <urn:Categorization_Tier_3>VPN TERCEROS</urn:Categorization_Tier_3>
+         <urn:First_Name>USUARIO</urn:First_Name>
+         <urn:Impact>4-Minor/Localized</urn:Impact>
+         <urn:Last_Name>SIEM</urn:Last_Name>
+         <urn:Product_Categorization_Tier_1>ATM</urn:Product_Categorization_Tier_1>
+         <urn:Product_Categorization_Tier_2>SOFTWARE CORE</urn:Product_Categorization_Tier_2>
+         <urn:Product_Categorization_Tier_3>DIRECTORIO ACTIVO</urn:Product_Categorization_Tier_3>
+         <urn:Reported_Source>Other</urn:Reported_Source>
+         <urn:Service_Type>User Service Restoration</urn:Service_Type>
+         <urn:Status>New</urn:Status>
+         <urn:Action>CREATE</urn:Action>
+         <urn:Summary>Prueba de incidente con web service 3</urn:Summary>
+         <urn:Urgency>2-High</urn:Urgency>
+
+      </urn:helpDeskSubmitService>
+
+   </soapenv:Body>
+
+</soapenv:Envelope>

@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="WOI_WorkOrder" resourceRoot="" soapui-version="4.5.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="WOI_WorkOrdertInterface_Create_WSPortTypeSoapBinding" type="wsdl" bindingName="{urn:WOI_WorkOrderInterface_Create_WS}WOI_WorkOrdertInterface_Create_WSPortTypeSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/E:/Customers/Gentera/SoapUI/WOI_WorkOrderInterface_Create_WS.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\E:\Customers\Gentera\SoapUI\WOI_WorkOrderInterface_Create_WS.xml"><con:part><con:url>file:\E:\Customers\Gentera\SoapUI\WOI_WorkOrderInterface_Create_WS.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:WOI_WorkOrderInterface_Create_WS" xmlns:s0="urn:WOI_WorkOrderInterface_Create_WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:WOI_WorkOrderInterface_Create_WS">
+      <xsd:element name="WorkOrder_Submit_Service" type="s0:InputMapping1"/>
+      <xsd:complexType name="InputMapping1">
+        <xsd:sequence>
+          <xsd:element name="Submitter" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assigned_To" type="xsd:string"/>
+          <xsd:element name="Status" type="s0:StatusType"/>
+          <xsd:element name="Short_Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assignee_Groups" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="InstanceId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Vendor_Assignee_Groups" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1G_Global_AST_ProductionDataSetID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Department" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Site_Group" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Region" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CI_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Schema_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LookupKeyword" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Site" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_01" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_02" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_03" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_04" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_05" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_06" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_07" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_08" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_09" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Template_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Attachment_attachmentName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Attachment_attachmentData" type="xsd:base64Binary"/>
+          <xsd:element minOccurs="0" name="Attachment_attachmentOrigSize" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Customer_Middle_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Command" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_WorklogDetails" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SRInstanceID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="zTmpEventGUID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CustomerFullName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_Summary" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_Details" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Secure_Work_Log" nillable="true" type="s0:Secure_Work_LogType"/>
+          <xsd:element minOccurs="0" name="z1D_View_Access" nillable="true" type="s0:z1D_View_AccessType"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_1_attachmentName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_1_attachmentData" type="xsd:base64Binary"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_1_attachmentOrigSize" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_2_attachmentName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_2_attachmentData" type="xsd:base64Binary"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_2_attachmentOrigSize" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_3_attachmentName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_3_attachmentData" type="xsd:base64Binary"/>
+          <xsd:element minOccurs="0" name="z2AF_Act_Attachment_3_attachmentOrigSize" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="StatusReasonString" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assignment_Accelerator_Assignee" nillable="true" type="s0:Assignment_Accelerator_AssigneeType"/>
+          <xsd:element minOccurs="0" name="Set_Manager_using" nillable="true" type="s0:Set_Manager_usingType"/>
+          <xsd:element minOccurs="0" name="SRMSRegistryInstanceID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SRMSAOIGuid" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SRID" type="xsd:string"/>
+          <xsd:element default="Headline field" minOccurs="0" name="Headline" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TemplateID" type="xsd:string"/>
+          <xsd:element default="$USER$" minOccurs="0" name="RequesterLoginID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StatusString" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_CommunicationSource" nillable="true" type="s0:z1D_CommunicationSourceType"/>
+          <xsd:element minOccurs="0" name="z1D_ActivityDate_tab" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="Created_From_flag" nillable="true" type="s0:Created_From_flagType"/>
+          <xsd:element minOccurs="0" name="z1D_SRMCommand" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Custom_CFG_Form_InstanceId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CustomRecordInstanceId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ClientLocale" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_10" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_11" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_12" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_13" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_14" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_15" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_16" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_17" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_18" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_19" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_20" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_21" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_22" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_23" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_24" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_25" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_26" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_27" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_28" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_29" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_30" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_10_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_11_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_12_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_13_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_14_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_15_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_16_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_17_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_18_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_19_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_20_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_21_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_22_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_23_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_24_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_25_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_26_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_27_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_28_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_29_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_30_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SRWorkInfoType" nillable="true" type="s0:SRWorkInfoTypeType"/>
+          <xsd:element minOccurs="0" name="z1D_ConfirmGroup" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CreatedFromBackEndSynchWI" nillable="true" type="s0:CreatedFromBackEndSynchWIType"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_48" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_49" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_50" type="xsd:time"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_51" type="xsd:time"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_48_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_49_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_50_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_51_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Work_Order_Template_Instance_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_01_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_02_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_03_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_04_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_05_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_06_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_07_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_08_Label" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WO_Type_Field_09_Label" type="xsd:string"/>
+          <xsd:element default="0" minOccurs="0" name="DatasetId" type="xsd:string"/>
+          <xsd:element default="0" minOccurs="0" name="ReconciliationIdentity" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Summary" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Location_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Manager_Support_Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Manager_Support_Group_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Last_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="First_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Middle_Initial" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="VIP" nillable="true" type="s0:Secure_Work_LogType"/>
+          <xsd:element minOccurs="0" name="Contact_Sensitivity" nillable="true" type="s0:Contact_SensitivityType"/>
+          <xsd:element minOccurs="0" name="Chg_Location_Address" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Internet_E-mail" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Phone_Number" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_Char01" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_3" type="xsd:string"/>
+          <xsd:element default="CREATE" minOccurs="0" name="z1D_Action" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="z1D_Integer01" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Person_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Add_Request_For_" nillable="true" type="s0:Add_Request_For_Type"/>
+          <xsd:element minOccurs="0" name="z1D_Integer02" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="z1D_Integer03" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="z1D_Char10" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Status_Reason" nillable="true" type="s0:Status_ReasonType"/>
+          <xsd:element minOccurs="0" name="Detailed_Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Priority" nillable="true" type="s0:PriorityType"/>
+          <xsd:element minOccurs="0" name="Work_Order_Type" nillable="true" type="s0:Work_Order_TypeType"/>
+          <xsd:element minOccurs="0" name="WorkOrder_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Request_Manager_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Requester_Support_Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Request_Manager" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CAB_Manager_Login" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="View_Access" nillable="true" type="s0:z1D_View_AccessType"/>
+          <xsd:element minOccurs="0" name="z1D_Status_Reason" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Requested_By_Person_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Cat_Tier_1_2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Cat_Tier_2__2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Cat_Tier_3__2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Secure_Work_Log2" nillable="true" type="s0:Secure_Work_LogType"/>
+          <xsd:element minOccurs="0" name="z1D_Permission_Group_ID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Product_Name__2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Model_Version__2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Manufacturer__2_" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WorkOrder__EntryID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Support_Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Support_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Support_Group_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Request_Assignee" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Person_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_First_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Last_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Department" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Internet_E-mail" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Phone_Number" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="StatusType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Assigned"/>
+          <xsd:enumeration value="Pending"/>
+          <xsd:enumeration value="Waiting Approval"/>
+          <xsd:enumeration value="Planning"/>
+          <xsd:enumeration value="In Progress"/>
+          <xsd:enumeration value="Completed"/>
+          <xsd:enumeration value="Rejected"/>
+          <xsd:enumeration value="Cancelled"/>
+          <xsd:enumeration value="Closed"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Secure_Work_LogType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Yes"/>
+          <xsd:enumeration value="No"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="z1D_View_AccessType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Internal"/>
+          <xsd:enumeration value="Public"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Assignment_Accelerator_AssigneeType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="My Default Group"/>
+          <xsd:enumeration value="My Group List"/>
+          <xsd:enumeration value="Favorite Group(s)"/>
+          <xsd:enumeration value="Auto Assign"/>
+          <xsd:enumeration value="Change Manager"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Set_Manager_usingType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Auto Assign"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="z1D_CommunicationSourceType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Email"/>
+          <xsd:enumeration value="Fax"/>
+          <xsd:enumeration value="Phone"/>
+          <xsd:enumeration value="Voice Mail"/>
+          <xsd:enumeration value="Walk In"/>
+          <xsd:enumeration value="Pager"/>
+          <xsd:enumeration value="System Assignment"/>
+          <xsd:enumeration value="Web"/>
+          <xsd:enumeration value="Other"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Created_From_flagType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Change"/>
+          <xsd:enumeration value="Request"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="SRWorkInfoTypeType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Request Primary Attachment"/>
+          <xsd:enumeration value="WorkInfo created Before SR Submit"/>
+          <xsd:enumeration value="WorkInfo created After SR Submit"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CreatedFromBackEndSynchWIType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Yes"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Contact_SensitivityType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Sensitive"/>
+          <xsd:enumeration value="Standard"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Add_Request_For_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Individual"/>
+          <xsd:enumeration value="Organization"/>
+          <xsd:enumeration value="Department"/>
+          <xsd:enumeration value="Company"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Status_ReasonType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="No Longer Required"/>
+          <xsd:enumeration value="Funding Not Available"/>
+          <xsd:enumeration value="To Be Re-Scheduled"/>
+          <xsd:enumeration value="Resources Not Available"/>
+          <xsd:enumeration value="Successful"/>
+          <xsd:enumeration value="Successful with Issues"/>
+          <xsd:enumeration value="Unsuccessful"/>
+          <xsd:enumeration value="Backed Out"/>
+          <xsd:enumeration value="Final Review Complete"/>
+          <xsd:enumeration value="Final Review Required"/>
+          <xsd:enumeration value="Additional Coding Required"/>
+          <xsd:enumeration value="Insufficient Task Data"/>
+          <xsd:enumeration value="In Verification"/>
+          <xsd:enumeration value="In Rollout"/>
+          <xsd:enumeration value="Insufficient Change Data"/>
+          <xsd:enumeration value="Schedule Conflicts"/>
+          <xsd:enumeration value="In Development"/>
+          <xsd:enumeration value="In Test"/>
+          <xsd:enumeration value="In Build"/>
+          <xsd:enumeration value="In Rollback"/>
+          <xsd:enumeration value="In Documentation"/>
+          <xsd:enumeration value="Vendor Purchase"/>
+          <xsd:enumeration value="Support Group Communication"/>
+          <xsd:enumeration value="Task Review"/>
+          <xsd:enumeration value="Miscellaneous"/>
+          <xsd:enumeration value="Future Enhancement"/>
+          <xsd:enumeration value="Manager Intervention"/>
+          <xsd:enumeration value="Accepted"/>
+          <xsd:enumeration value="Assigned"/>
+          <xsd:enumeration value="Built"/>
+          <xsd:enumeration value="On Hold"/>
+          <xsd:enumeration value="Automatically Closed"/>
+          <xsd:enumeration value="Client Hold"/>
+          <xsd:enumeration value="Client Additional Information Requested"/>
+          <xsd:enumeration value="Client Action Required"/>
+          <xsd:enumeration value="Support Contact Hold"/>
+          <xsd:enumeration value="Local Site Action Required"/>
+          <xsd:enumeration value="Purchase Order Approval"/>
+          <xsd:enumeration value="Supplier Delivery"/>
+          <xsd:enumeration value="Third Party Vendor Action Required"/>
+          <xsd:enumeration value="Infrastructure Change"/>
+          <xsd:enumeration value="Initial Status"/>
+          <xsd:enumeration value="Awaiting Request Assignee"/>
+          <xsd:enumeration value="Work not started"/>
+          <xsd:enumeration value="Cancelled by Requester"/>
+          <xsd:enumeration value="Cancelled by Support"/>
+          <xsd:enumeration value="Customer Close"/>
+          <xsd:enumeration value="System Close"/>
+          <xsd:enumeration value="System Close with Issues"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PriorityType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Critical"/>
+          <xsd:enumeration value="High"/>
+          <xsd:enumeration value="Medium"/>
+          <xsd:enumeration value="Low"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Work_Order_TypeType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Project"/>
+          <xsd:enumeration value="General"/>
+          <xsd:enumeration value="Release"/>
+          <xsd:enumeration value="Asset Configuration"/>
+          <xsd:enumeration value="Asset Management"/>
+          <xsd:enumeration value="Asset Lease"/>
+          <xsd:enumeration value="Purchase Requisition"/>
+          <xsd:enumeration value="Asset Maintenance"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="WorkOrder_Submit_ServiceResponse" type="s0:OutputMapping1"/>
+      <xsd:complexType name="OutputMapping1">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="WorkOrder_ID" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="AuthenticationInfo" type="s0:AuthenticationInfo"/>
+      <xsd:complexType name="AuthenticationInfo">
+        <xsd:sequence>
+          <xsd:element name="userName" type="xsd:string"/>
+          <xsd:element name="password" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="authentication" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="locale" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="timeZone" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ARAuthenticate">
+    <wsdl:part element="s0:AuthenticationInfo" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="WorkOrder_Submit_ServiceSoapIn">
+    <wsdl:part element="s0:WorkOrder_Submit_Service" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="WorkOrder_Submit_ServiceSoapOut">
+    <wsdl:part element="s0:WorkOrder_Submit_ServiceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WOI_WorkOrdertInterface_Create_WSPortTypePortType">
+    <wsdl:operation name="WorkOrder_Submit_Service">
+      <wsdl:input message="s0:WorkOrder_Submit_ServiceSoapIn"></wsdl:input>
+      <wsdl:output message="s0:WorkOrder_Submit_ServiceSoapOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WOI_WorkOrdertInterface_Create_WSPortTypeSoapBinding" type="s0:WOI_WorkOrdertInterface_Create_WSPortTypePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="WorkOrder_Submit_Service">
+      <soap:operation soapAction="urn:WOI_WorkOrderInterface_Create_WS/WorkOrder_Submit_Service" style="document"/>
+      <wsdl:input>
+        <soap:header message="s0:ARAuthenticate" part="parameters" use="literal"></soap:header>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WOI_WorkOrderInterface_Create_WSService">
+    <wsdl:documentation>WOI:WorkOrderInterface_Create</wsdl:documentation>
+    <wsdl:port binding="s0:WOI_WorkOrdertInterface_Create_WSPortTypeSoapBinding" name="WOI_WorkOrdertInterface_Create_WSPortTypeSoap">
+      <soap:address location="https://bcbeta100/arsys/services/ARService?server=bcbeta100&amp;webService=WOI_WorkOrderInterface_Create_WS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://bcbeta100/arsys/services/ARService?server=bcbeta100&amp;webService=WOI_WorkOrderInterface_Create_WS</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:WOI_WorkOrderInterface_Create_WS/WorkOrder_Submit_Service" name="WorkOrder_Submit_Service" bindingOperationName="WorkOrder_Submit_Service" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://bcbeta100/arsys/services/ARService?server=bcbeta100&amp;webService=WOI_WorkOrderInterface_Create_WS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WOI_WorkOrderInterface_Create_WS">
+   <soapenv:Header>
+      <urn:AuthenticationInfo>
+         <urn:userName>?</urn:userName>
+         <urn:password>?</urn:password>
+         <!--Optional:-->
+         <urn:authentication>?</urn:authentication>
+         <!--Optional:-->
+         <urn:locale>?</urn:locale>
+         <!--Optional:-->
+         <urn:timeZone>?</urn:timeZone>
+      </urn:AuthenticationInfo>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:WorkOrder_Submit_Service>
+         <urn:Submitter>?</urn:Submitter>
+         <!--Optional:-->
+         <urn:Assigned_To>?</urn:Assigned_To>
+         <urn:Status>?</urn:Status>
+         <urn:Short_Description>?</urn:Short_Description>
+         <!--Optional:-->
+         <urn:Assignee_Groups>?</urn:Assignee_Groups>
+         <!--Optional:-->
+         <urn:InstanceId>?</urn:InstanceId>
+         <!--Optional:-->
+         <urn:Vendor_Assignee_Groups>?</urn:Vendor_Assignee_Groups>
+         <!--Optional:-->
+         <urn:z1G_Global_AST_ProductionDataSetID>?</urn:z1G_Global_AST_ProductionDataSetID>
+         <!--Optional:-->
+         <urn:Department>?</urn:Department>
+         <!--Optional:-->
+         <urn:Site_Group>?</urn:Site_Group>
+         <!--Optional:-->
+         <urn:Region>?</urn:Region>
+         <!--Optional:-->
+         <urn:CI_Name>?</urn:CI_Name>
+         <!--Optional:-->
+         <urn:Schema_Name>?</urn:Schema_Name>
+         <!--Optional:-->
+         <urn:LookupKeyword>?</urn:LookupKeyword>
+         <!--Optional:-->
+         <urn:Site>?</urn:Site>
+         <!--Optional:-->
+         <urn:WO_Type_Field_01>?</urn:WO_Type_Field_01>
+         <!--Optional:-->
+         <urn:WO_Type_Field_02>?</urn:WO_Type_Field_02>
+         <!--Optional:-->
+         <urn:WO_Type_Field_03>?</urn:WO_Type_Field_03>
+         <!--Optional:-->
+         <urn:WO_Type_Field_04>?</urn:WO_Type_Field_04>
+         <!--Optional:-->
+         <urn:WO_Type_Field_05>?</urn:WO_Type_Field_05>
+         <!--Optional:-->
+         <urn:WO_Type_Field_06>?</urn:WO_Type_Field_06>
+         <!--Optional:-->
+         <urn:WO_Type_Field_07>?</urn:WO_Type_Field_07>
+         <!--Optional:-->
+         <urn:WO_Type_Field_08>?</urn:WO_Type_Field_08>
+         <!--Optional:-->
+         <urn:WO_Type_Field_09>?</urn:WO_Type_Field_09>
+         <!--Optional:-->
+         <urn:Template_Name>?</urn:Template_Name>
+         <!--Optional:-->
+         <urn:Attachment_attachmentName>?</urn:Attachment_attachmentName>
+         <!--Optional:-->
+         <urn:Attachment_attachmentData>cid:712584867700</urn:Attachment_attachmentData>
+         <!--Optional:-->
+         <urn:Attachment_attachmentOrigSize>?</urn:Attachment_attachmentOrigSize>
+         <!--Optional:-->
+         <urn:Customer_Middle_Name>?</urn:Customer_Middle_Name>
+         <!--Optional:-->
+         <urn:Command>?</urn:Command>
+         <!--Optional:-->
+         <urn:z1D_WorklogDetails>?</urn:z1D_WorklogDetails>
+         <!--Optional:-->
+         <urn:SRInstanceID>?</urn:SRInstanceID>
+         <!--Optional:-->
+         <urn:zTmpEventGUID>?</urn:zTmpEventGUID>
+         <!--Optional:-->
+         <urn:CustomerFullName>?</urn:CustomerFullName>
+         <!--Optional:-->
+         <urn:z1D_Summary>?</urn:z1D_Summary>
+         <!--Optional:-->
+         <urn:z1D_Details>?</urn:z1D_Details>
+         <!--Optional:-->
+         <urn:Secure_Work_Log>?</urn:Secure_Work_Log>
+         <!--Optional:-->
+         <urn:z1D_View_Access>?</urn:z1D_View_Access>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_1_attachmentName>?</urn:z2AF_Act_Attachment_1_attachmentName>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_1_attachmentData>cid:1386819956185</urn:z2AF_Act_Attachment_1_attachmentData>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_1_attachmentOrigSize>?</urn:z2AF_Act_Attachment_1_attachmentOrigSize>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_2_attachmentName>?</urn:z2AF_Act_Attachment_2_attachmentName>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_2_attachmentData>cid:118240690811</urn:z2AF_Act_Attachment_2_attachmentData>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_2_attachmentOrigSize>?</urn:z2AF_Act_Attachment_2_attachmentOrigSize>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_3_attachmentName>?</urn:z2AF_Act_Attachment_3_attachmentName>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_3_attachmentData>cid:1195446341195</urn:z2AF_Act_Attachment_3_attachmentData>
+         <!--Optional:-->
+         <urn:z2AF_Act_Attachment_3_attachmentOrigSize>?</urn:z2AF_Act_Attachment_3_attachmentOrigSize>
+         <!--Optional:-->
+         <urn:StatusReasonString>?</urn:StatusReasonString>
+         <!--Optional:-->
+         <urn:Assignment_Accelerator_Assignee>?</urn:Assignment_Accelerator_Assignee>
+         <!--Optional:-->
+         <urn:Set_Manager_using>?</urn:Set_Manager_using>
+         <!--Optional:-->
+         <urn:SRMSRegistryInstanceID>?</urn:SRMSRegistryInstanceID>
+         <!--Optional:-->
+         <urn:SRMSAOIGuid>?</urn:SRMSAOIGuid>
+         <!--Optional:-->
+         <urn:SRID>?</urn:SRID>
+         <!--Optional:-->
+         <urn:Headline>Headline field</urn:Headline>
+         <!--Optional:-->
+         <urn:TemplateID>?</urn:TemplateID>
+         <!--Optional:-->
+         <urn:RequesterLoginID>$USER$</urn:RequesterLoginID>
+         <!--Optional:-->
+         <urn:StatusString>?</urn:StatusString>
+         <!--Optional:-->
+         <urn:z1D_CommunicationSource>?</urn:z1D_CommunicationSource>
+         <!--Optional:-->
+         <urn:z1D_ActivityDate_tab>?</urn:z1D_ActivityDate_tab>
+         <!--Optional:-->
+         <urn:Created_From_flag>?</urn:Created_From_flag>
+         <!--Optional:-->
+         <urn:z1D_SRMCommand>?</urn:z1D_SRMCommand>
+         <!--Optional:-->
+         <urn:Custom_CFG_Form_InstanceId>?</urn:Custom_CFG_Form_InstanceId>
+         <!--Optional:-->
+         <urn:CustomRecordInstanceId>?</urn:CustomRecordInstanceId>
+         <!--Optional:-->
+         <urn:ClientLocale>?</urn:ClientLocale>
+         <!--Optional:-->
+         <urn:WO_Type_Field_10>?</urn:WO_Type_Field_10>
+         <!--Optional:-->
+         <urn:WO_Type_Field_11>?</urn:WO_Type_Field_11>
+         <!--Optional:-->
+         <urn:WO_Type_Field_12>?</urn:WO_Type_Field_12>
+         <!--Optional:-->
+         <urn:WO_Type_Field_13>?</urn:WO_Type_Field_13>
+         <!--Optional:-->
+         <urn:WO_Type_Field_14>?</urn:WO_Type_Field_14>
+         <!--Optional:-->
+         <urn:WO_Type_Field_15>?</urn:WO_Type_Field_15>
+         <!--Optional:-->
+         <urn:WO_Type_Field_16>?</urn:WO_Type_Field_16>
+         <!--Optional:-->
+         <urn:WO_Type_Field_17>?</urn:WO_Type_Field_17>
+         <!--Optional:-->
+         <urn:WO_Type_Field_18>?</urn:WO_Type_Field_18>
+         <!--Optional:-->
+         <urn:WO_Type_Field_19>?</urn:WO_Type_Field_19>
+         <!--Optional:-->
+         <urn:WO_Type_Field_20>?</urn:WO_Type_Field_20>
+         <!--Optional:-->
+         <urn:WO_Type_Field_21>?</urn:WO_Type_Field_21>
+         <!--Optional:-->
+         <urn:WO_Type_Field_22>?</urn:WO_Type_Field_22>
+         <!--Optional:-->
+         <urn:WO_Type_Field_23>?</urn:WO_Type_Field_23>
+         <!--Optional:-->
+         <urn:WO_Type_Field_24>?</urn:WO_Type_Field_24>
+         <!--Optional:-->
+         <urn:WO_Type_Field_25>?</urn:WO_Type_Field_25>
+         <!--Optional:-->
+         <urn:WO_Type_Field_26>?</urn:WO_Type_Field_26>
+         <!--Optional:-->
+         <urn:WO_Type_Field_27>?</urn:WO_Type_Field_27>
+         <!--Optional:-->
+         <urn:WO_Type_Field_28>?</urn:WO_Type_Field_28>
+         <!--Optional:-->
+         <urn:WO_Type_Field_29>?</urn:WO_Type_Field_29>
+         <!--Optional:-->
+         <urn:WO_Type_Field_30>?</urn:WO_Type_Field_30>
+         <!--Optional:-->
+         <urn:WO_Type_Field_10_Label>?</urn:WO_Type_Field_10_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_11_Label>?</urn:WO_Type_Field_11_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_12_Label>?</urn:WO_Type_Field_12_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_13_Label>?</urn:WO_Type_Field_13_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_14_Label>?</urn:WO_Type_Field_14_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_15_Label>?</urn:WO_Type_Field_15_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_16_Label>?</urn:WO_Type_Field_16_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_17_Label>?</urn:WO_Type_Field_17_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_18_Label>?</urn:WO_Type_Field_18_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_19_Label>?</urn:WO_Type_Field_19_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_20_Label>?</urn:WO_Type_Field_20_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_21_Label>?</urn:WO_Type_Field_21_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_22_Label>?</urn:WO_Type_Field_22_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_23_Label>?</urn:WO_Type_Field_23_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_24_Label>?</urn:WO_Type_Field_24_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_25_Label>?</urn:WO_Type_Field_25_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_26_Label>?</urn:WO_Type_Field_26_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_27_Label>?</urn:WO_Type_Field_27_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_28_Label>?</urn:WO_Type_Field_28_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_29_Label>?</urn:WO_Type_Field_29_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_30_Label>?</urn:WO_Type_Field_30_Label>
+         <!--Optional:-->
+         <urn:SRWorkInfoType>?</urn:SRWorkInfoType>
+         <!--Optional:-->
+         <urn:z1D_ConfirmGroup>?</urn:z1D_ConfirmGroup>
+         <!--Optional:-->
+         <urn:CreatedFromBackEndSynchWI>?</urn:CreatedFromBackEndSynchWI>
+         <!--Optional:-->
+         <urn:WO_Type_Field_48>?</urn:WO_Type_Field_48>
+         <!--Optional:-->
+         <urn:WO_Type_Field_49>?</urn:WO_Type_Field_49>
+         <!--Optional:-->
+         <urn:WO_Type_Field_50>?</urn:WO_Type_Field_50>
+         <!--Optional:-->
+         <urn:WO_Type_Field_51>?</urn:WO_Type_Field_51>
+         <!--Optional:-->
+         <urn:WO_Type_Field_48_Label>?</urn:WO_Type_Field_48_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_49_Label>?</urn:WO_Type_Field_49_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_50_Label>?</urn:WO_Type_Field_50_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_51_Label>?</urn:WO_Type_Field_51_Label>
+         <!--Optional:-->
+         <urn:Work_Order_Template_Instance_ID>?</urn:Work_Order_Template_Instance_ID>
+         <!--Optional:-->
+         <urn:WO_Type_Field_01_Label>?</urn:WO_Type_Field_01_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_02_Label>?</urn:WO_Type_Field_02_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_03_Label>?</urn:WO_Type_Field_03_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_04_Label>?</urn:WO_Type_Field_04_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_05_Label>?</urn:WO_Type_Field_05_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_06_Label>?</urn:WO_Type_Field_06_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_07_Label>?</urn:WO_Type_Field_07_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_08_Label>?</urn:WO_Type_Field_08_Label>
+         <!--Optional:-->
+         <urn:WO_Type_Field_09_Label>?</urn:WO_Type_Field_09_Label>
+         <!--Optional:-->
+         <urn:DatasetId>0</urn:DatasetId>
+         <!--Optional:-->
+         <urn:ReconciliationIdentity>0</urn:ReconciliationIdentity>
+         <!--Optional:-->
+         <urn:Summary>?</urn:Summary>
+         <!--Optional:-->
+         <urn:Location_Company>?</urn:Location_Company>
+         <!--Optional:-->
+         <urn:Organization>?</urn:Organization>
+         <!--Optional:-->
+         <urn:Manager_Support_Organization>?</urn:Manager_Support_Organization>
+         <!--Optional:-->
+         <urn:Manager_Support_Group_Name>?</urn:Manager_Support_Group_Name>
+         <!--Optional:-->
+         <urn:Last_Name>?</urn:Last_Name>
+         <!--Optional:-->
+         <urn:First_Name>?</urn:First_Name>
+         <!--Optional:-->
+         <urn:Middle_Initial>?</urn:Middle_Initial>
+         <!--Optional:-->
+         <urn:VIP>?</urn:VIP>
+         <!--Optional:-->
+         <urn:Contact_Sensitivity>?</urn:Contact_Sensitivity>
+         <!--Optional:-->
+         <urn:Chg_Location_Address>?</urn:Chg_Location_Address>
+         <!--Optional:-->
+         <urn:Internet_E-mail>?</urn:Internet_E-mail>
+         <!--Optional:-->
+         <urn:Phone_Number>?</urn:Phone_Number>
+         <!--Optional:-->
+         <urn:z1D_Char01>?</urn:z1D_Char01>
+         <!--Optional:-->
+         <urn:Categorization_Tier_1>?</urn:Categorization_Tier_1>
+         <!--Optional:-->
+         <urn:Categorization_Tier_2>?</urn:Categorization_Tier_2>
+         <!--Optional:-->
+         <urn:Categorization_Tier_3>?</urn:Categorization_Tier_3>
+         <!--Optional:-->
+         <urn:z1D_Action>CREATE</urn:z1D_Action>
+         <!--Optional:-->
+         <urn:z1D_Integer01>?</urn:z1D_Integer01>
+         <!--Optional:-->
+         <urn:Person_ID>?</urn:Person_ID>
+         <!--Optional:-->
+         <urn:Company>?</urn:Company>
+         <!--Optional:-->
+         <urn:Add_Request_For_>?</urn:Add_Request_For_>
+         <!--Optional:-->
+         <urn:z1D_Integer02>?</urn:z1D_Integer02>
+         <!--Optional:-->
+         <urn:z1D_Integer03>?</urn:z1D_Integer03>
+         <!--Optional:-->
+         <urn:z1D_Char10>?</urn:z1D_Char10>
+         <!--Optional:-->
+         <urn:Status_Reason>?</urn:Status_Reason>
+         <!--Optional:-->
+         <urn:Detailed_Description>?</urn:Detailed_Description>
+         <!--Optional:-->
+         <urn:Priority>?</urn:Priority>
+         <!--Optional:-->
+         <urn:Work_Order_Type>?</urn:Work_Order_Type>
+         <!--Optional:-->
+         <urn:WorkOrder_ID>?</urn:WorkOrder_ID>
+         <!--Optional:-->
+         <urn:Request_Manager_Company>?</urn:Request_Manager_Company>
+         <!--Optional:-->
+         <urn:Requester_Support_Organization>?</urn:Requester_Support_Organization>
+         <!--Optional:-->
+         <urn:Request_Manager>?</urn:Request_Manager>
+         <!--Optional:-->
+         <urn:CAB_Manager_Login>?</urn:CAB_Manager_Login>
+         <!--Optional:-->
+         <urn:View_Access>?</urn:View_Access>
+         <!--Optional:-->
+         <urn:z1D_Status_Reason>?</urn:z1D_Status_Reason>
+         <!--Optional:-->
+         <urn:Requested_By_Person_ID>?</urn:Requested_By_Person_ID>
+         <!--Optional:-->
+         <urn:Product_Cat_Tier_1_2_>?</urn:Product_Cat_Tier_1_2_>
+         <!--Optional:-->
+         <urn:Product_Cat_Tier_2__2_>?</urn:Product_Cat_Tier_2__2_>
+         <!--Optional:-->
+         <urn:Product_Cat_Tier_3__2_>?</urn:Product_Cat_Tier_3__2_>
+         <!--Optional:-->
+         <urn:Secure_Work_Log2>?</urn:Secure_Work_Log2>
+         <!--Optional:-->
+         <urn:z1D_Permission_Group_ID>?</urn:z1D_Permission_Group_ID>
+         <!--Optional:-->
+         <urn:Product_Name__2_>?</urn:Product_Name__2_>
+         <!--Optional:-->
+         <urn:Product_Model_Version__2_>?</urn:Product_Model_Version__2_>
+         <!--Optional:-->
+         <urn:Manufacturer__2_>?</urn:Manufacturer__2_>
+         <!--Optional:-->
+         <urn:WorkOrder__EntryID>?</urn:WorkOrder__EntryID>
+         <!--Optional:-->
+         <urn:Support_Organization>?</urn:Support_Organization>
+         <!--Optional:-->
+         <urn:Support_Company>?</urn:Support_Company>
+         <!--Optional:-->
+         <urn:Support_Group_Name>?</urn:Support_Group_Name>
+         <!--Optional:-->
+         <urn:Request_Assignee>?</urn:Request_Assignee>
+         <!--Optional:-->
+         <urn:Customer_Person_ID>?</urn:Customer_Person_ID>
+         <!--Optional:-->
+         <urn:Customer_First_Name>?</urn:Customer_First_Name>
+         <!--Optional:-->
+         <urn:Customer_Last_Name>?</urn:Customer_Last_Name>
+         <!--Optional:-->
+         <urn:Customer_Company>?</urn:Customer_Company>
+         <!--Optional:-->
+         <urn:Customer_Organization>?</urn:Customer_Organization>
+         <!--Optional:-->
+         <urn:Customer_Department>?</urn:Customer_Department>
+         <!--Optional:-->
+         <urn:Customer_Internet_E-mail>?</urn:Customer_Internet_E-mail>
+         <!--Optional:-->
+         <urn:Customer_Phone_Number>?</urn:Customer_Phone_Number>
+      </urn:WorkOrder_Submit_Service>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WOI_WorkOrderInterface_Create_WS/WorkOrder_Submit_Service"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>

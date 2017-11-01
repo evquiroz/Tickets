@@ -1,0 +1,392 @@
+
+body {
+  font-family:          Arial, Helvetica, sans-serif;
+  margin-left:          0;
+  margin-right:         0;
+}
+
+h3 {
+  color:                #5D6A72;
+}
+
+th {
+  background-color:     #5D6A72;
+  color:                #FFFFFF;
+  font-weight:          bold;
+  height:               28px;
+  letter-spacing:       1px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+
+a:link {
+  color:                #209CEE;
+  font-weight:          bold;
+  text-decoration:      none;
+}
+
+a:hover {
+  color:                #EE7421;
+  font-weight:          bold;
+  text-decoration:      none;
+}
+
+a:visited {
+  color:                #209CEE;
+  font-weight:          bold;
+  text-decoration:      none;
+}
+
+
+#header {
+  background-image:      url(../img/imgHome.png);
+  background-repeat:     no-repeat;
+  background-position-x: 0;
+  background-color:      #5D6A72;
+  left:                  0;
+  text-align:            center;
+  height:                162px;
+  top:                   0;
+  width:                 100%;
+}
+
+#contentArea {
+  background-color:     #FFFFFF;
+  color:                #5D6A72;
+  height:               572px;
+  padding-left:         20px;
+  padding-right:        20px;
+  padding-top:          20px;
+  text-align:           center;
+}
+
+#externalArea {
+  background-color:     #FFFFFF;
+  color:                #5D6A72;
+}
+
+#internalArea {
+  background-color:     #FFFFFF;
+  color:                #5D6A72;
+}
+
+.headerTable {
+  width:                1024px;
+  text-align:           center;
+}
+
+.menuSup {
+  padding-top:          20px;
+  padding-right:        74px;
+  text-align:           right;
+}
+
+.formArea {
+  background-color:     #F1F1F1;
+  color:                #000000;
+  font-size:            11pt;
+  min-height:           402px;
+  width:                82%;
+}
+
+#messagesArea {
+  background-color:     #990000;
+  color:                #FFFFFF;
+  font-size:            10pt;
+  height:               40px;
+  font-weight:          bold;
+  letter-spacing:       1px;
+  padding-top:          10px;
+  text-align:           center;
+  vertical-align:       middle;
+  width:                82%;
+}
+
+#footer {
+  background-color:     #EE7421;
+  color:                #FFFFFF;
+  height:               302px;
+  text-align:           center;
+  padding-top:          20px;
+}
+
+a.linkMenuSup:link {
+  color:                #FFFFFF;
+  font-weight:          bold;
+  font-size:            8pt;
+  text-decoration:      none;
+}
+
+a.linkMenuSup:hover {
+  color:                #EE7421;
+  font-weight:          bold;
+  font-size:            8pt;
+  text-decoration:      none;
+}
+
+a.linkMenuSup:active {
+  color:                #EE7421;
+  font-weight:          bold;
+  font-size:            8pt;
+  text-decoration:      none;
+}
+
+a.linkMenuSup:visited {
+  color:                #FFFFFF;
+  font-weight:          bold;
+  font-size:            8pt;
+  text-decoration:      none;
+}
+
+.loginFormTitle {
+
+  font-size:            larger;
+  height:               28px;
+  padding-top:          2px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+.loginForm {
+  background-color:     #F1F1F1;
+  color:                #000000;
+  font-size:            10pt;
+  width:                600px;
+}
+
+.ticketForm {
+  background-color:     #F1F1F1;
+  color:                #000000;
+  font-size:            10pt;
+  min-height:           402px;
+  width:                80%;
+}
+
+.recordTable {
+  background-color:     #F1F1F1;
+  border-bottom:        1px solid #5D6A72;
+  border-left:          1px solid #5D6A72;
+  border-right:         1px solid #5D6A72;
+  color:                #000000;
+  font-size:            10pt;
+  width:                920px;
+}
+
+.loginFormTitle {
+
+  font-size:            larger;
+  height:               28px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+.ticketFormTitle {
+
+  font-size:            larger;
+  height:               28px;
+  padding-top:          2px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+.formLeftColumn {
+  font-weight:          bold;
+  letter-spacing:       1px;
+  padding-left:         24px;
+  padding-top:          6px;
+  text-align:           left;
+  vertical-align:       top;
+  width:                220px;
+}
+
+.formLeftColumnDisabled {
+  color:                #5D6A72;
+  font-weight:          bold;
+  font-style:           italic;
+  height:               34px;
+  letter-spacing:       1px;
+  padding-left:         24px;
+  padding-top:          8px;
+  text-align:           left;
+  vertical-align:       top;
+  width:                220px;
+}
+
+.disabledLabel {
+  color:                #5D6A72;
+  font-weight:          bold;
+  font-style:           italic;
+  letter-spacing:       1px;
+  text-align:           left;
+  vertical-align:       top;
+}
+
+.fromMiddleColumn {
+  width:                46px;
+}
+
+.bigButton {
+  height:               48px;
+  text-align:           center;
+  vertical-align:       middle;
+  width:                320px;
+}
+
+#buttonAddUser {
+  height:               32px;
+  text-align:           center;
+  vertical-align:       middle;
+  width:                140px;
+}
+
+.formButtonsTable {
+  font-size:            10pt;
+  padding-right:        44px;
+  text-align:           right;
+  width:                80%;
+}
+
+.formButton {
+  text-align:           center;
+  vertical-align:       middle;
+  width:                152px;
+}
+
+.fieldError {
+
+  color:                #800000;
+  font-weight:          bold;
+}
+
+.inputError {
+
+  color:                #800000;
+  font-size:            smaller;
+  font-style:           italic;
+}
+
+.jquiTableHeader {
+
+  height:               28px;
+  letter-spacing:       2px;
+  padding-top:          6px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+.jquiFilterBox {
+
+  letter-spacing:       1px;
+  min-height:           28px;
+  padding-top:          6px;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+td.white {
+
+  color:                #000000;
+  padding-left:         12px;
+}
+
+td.gray {
+
+  color:                #000000;
+  background-color:     #F1F1F1;
+  padding-left:         12px;
+}
+
+td.whiteCenter {
+
+  color:                #000000;
+  text-align:           center;
+}
+
+td.grayCenter {
+
+  color:                #000000;
+  background-color:     #F1F1F1;
+  text-align:           center;
+}
+
+td.whiteIcon {
+
+  color:                #000000;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+td.grayIcon {
+
+  color:                #000000;
+  background-color:     #F1F1F1;
+  text-align:           center;
+  vertical-align:       middle;
+}
+
+table.listTable {
+
+  border:               1px solid #5D6A72;
+  width:                920px;
+}
+
+.iconAddRecord {
+  background-image:     url(../img/addRecord.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconCancel {
+  background-image:     url(../img/cancel.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconReset {
+  background-image:     url(../img/reset.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconLogin {
+  background-image:     url(../img/forward.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconSave {
+  background-image:     url(../img/save.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconUsers {
+  background-image:     url(../img/users.png) !important;
+}
+
+.iconContinue {
+  background-image:     url(../img/continue.png) !important;
+  height:               16px;
+  width:                16px;
+}
+
+.iconMessages {
+  background-image:     url(../img/reminders.png) !important;
+}
+
+.disabledTexbox {
+
+  background-color:     #E0E0E0;
+  color:                #5D6A72;
+  font-style:           oblique;
+}
+
+.textNote {
+
+  color:                #5D6A72;
+  font-style:           oblique;
+  font-size:            10px;
+  letter-spacing:       1px;
+  padding-left:         28px;
+}

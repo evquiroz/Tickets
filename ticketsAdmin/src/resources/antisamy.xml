@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+
+<anti-samy-rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="antisamy.xsd">
+	
+	<directives>
+		<directive name="omitXmlDeclaration" value="true"/>
+		<directive name="omitDoctypeDeclaration" value="true"/>
+		<directive name="maxInputSize" value="5000"/>
+		<directive name="useXHTML" value="true"/>
+		<directive name="formatOutput" value="true"/>
+		
+		<directive name="embedStyleSheets" value="false"/>
+	</directives>
+	
+	<!-- Not Required -->
+	<common-regexps/>
+	
+	
+	<!-- Not Required -->
+	<common-attributes/>
+
+	<!-- Not Required -->
+	<global-tag-attributes/>
+
+	<tags-to-encode>
+		<tag>g</tag>
+		<tag>grin</tag>
+	</tags-to-encode>
+	
+	<tag-rules>
+
+		<!-- JavaScript Related Tags -->
+
+		<tag name="script" action="remove"/>
+		<tag name="noscript" action="remove"/>
+		
+		<!-- Frame & related tags -->
+		
+		<tag name="iframe" action="remove"/>
+		<tag name="frameset" action="remove"/>
+		<tag name="frame" action="remove"/>
+		<tag name="noframes" action="remove"/>
+		
+		<!-- CSS related tags -->
+		<tag name="style" action="remove"/>
+
+		<!-- HTML related tags -->
+		<tag name="a" action="remove"/>
+		<tag name="abbr" action="remove"/>
+		<tag name="acronym" action="remove"/>
+		<tag name="address" action="remove"/>
+		<tag name="applet" action="remove"/>
+		<tag name="area" action="remove"/>
+		<tag name="article" action="remove"/>
+		<tag name="aside" action="remove"/>
+		<tag name="audio" action="remove"/>
+		<tag name="b" action="remove"/>
+		<tag name="base" action="remove"/>
+		<tag name="basefont" action="remove"/>
+		<tag name="bdi" action="remove"/>
+		<tag name="bdo" action="remove"/>
+		<tag name="big" action="remove"/>
+		<tag name="blockquote" action="remove"/>
+		<tag name="body" action="remove"/>
+		<tag name="br" action="remove"/>
+		<tag name="button" action="remove"/>
+		<tag name="canvas" action="remove"/>
+		<tag name="caption" action="remove"/>
+		<tag name="center" action="remove"/>
+		<tag name="cite" action="remove"/>
+		<tag name="code" action="remove"/>
+		<tag name="col" action="remove"/>
+		<tag name="colgroup" action="remove"/>
+		<tag name="command" action="remove"/>
+		<tag name="datalist" action="remove"/>
+		<tag name="dd" action="remove"/>
+		<tag name="del" action="remove"/>
+		<tag name="details" action="remove"/>
+		<tag name="dfn" action="remove"/>
+		<tag name="dir" action="remove"/>
+		<tag name="div" action="remove"/>
+		<tag name="dl" action="remove"/>
+		<tag name="dt" action="remove"/>
+		<tag name="em" action="remove"/>
+		<tag name="embed" action="remove"/>
+		<tag name="fieldset" action="remove"/>
+		<tag name="figcaption" action="remove"/>
+		<tag name="figure" action="remove"/>
+		<tag name="font" action="remove"/>
+		<tag name="footer" action="remove"/>
+		<tag name="form" action="remove"/>
+		<tag name="head" action="remove"/>
+		<tag name="header" action="remove"/>
+		<tag name="hgroup" action="remove"/>
+		<tag name="h1" action="remove"/>
+		<tag name="h2" action="remove"/>
+		<tag name="h3" action="remove"/>
+		<tag name="h4" action="remove"/>
+		<tag name="h5" action="remove"/>
+		<tag name="h6" action="remove"/>
+		<tag name="hr" action="remove"/>
+		<tag name="html" action="remove"/>
+		<tag name="i" action="remove"/>
+		<tag name="img" action="remove"/>
+		<tag name="input" action="remove"/>
+		<tag name="ins" action="remove"/>
+		<tag name="kbd" action="remove"/>
+		<tag name="keygen" action="remove"/>
+		<tag name="label" action="remove"/>
+		<tag name="legend" action="remove"/>
+		<tag name="li" action="remove"/>
+		<tag name="link" action="remove"/>
+		<tag name="map" action="remove"/>
+		<tag name="mark" action="remove"/>
+		<tag name="menu" action="remove"/>
+		<tag name="meta" action="remove"/>
+		<tag name="meter" action="remove"/>
+		<tag name="nav" action="remove"/>
+		<tag name="object" action="remove"/>
+		<tag name="ol" action="remove"/>
+		<tag name="optgroup" action="remove"/>
+		<tag name="option" action="remove"/>
+		<tag name="output" action="remove"/>
+		<tag name="p" action="remove"/>
+		<tag name="param" action="remove"/>
+		<tag name="pre" action="remove"/>
+		<tag name="progress" action="remove"/>
+		<tag name="q" action="remove"/>
+		<tag name="rp" action="remove"/>
+		<tag name="rt" action="remove"/>
+		<tag name="ruby" action="remove"/>
+		<tag name="s" action="remove"/>
+		<tag name="samp" action="remove"/>
+		<tag name="section" action="remove"/>
+		<tag name="select" action="remove"/>
+		<tag name="small" action="remove"/>
+		<tag name="source" action="remove"/>
+		<tag name="span" action="remove"/>
+		<tag name="strike" action="remove"/>
+		<tag name="strong" action="remove"/>
+		<tag name="sub" action="remove"/>
+		<tag name="summary" action="remove"/>
+		<tag name="sup" action="remove"/>
+		<tag name="table" action="remove"/>
+		<tag name="tbody" action="remove"/>
+		<tag name="td" action="remove"/>
+		<tag name="textarea" action="remove"/>
+		<tag name="tfoot" action="remove"/>
+		<tag name="th" action="remove"/>
+		<tag name="thead" action="remove"/>
+		<tag name="time" action="remove"/>
+		<tag name="title" action="remove"/>
+		<tag name="tr" action="remove"/>
+		<tag name="track" action="remove"/>
+		<tag name="tt" action="remove"/>
+		<tag name="u" action="remove"/>
+		<tag name="ul" action="remove"/>
+		<tag name="var" action="remove"/>
+		<tag name="video" action="remove"/>
+		<tag name="wbr" action="remove"/>
+		
+	</tag-rules>
+
+	<!--  No CSS on Slashdot posts -->
+
+	<css-rules>
+	</css-rules>
+
+</anti-samy-rules>

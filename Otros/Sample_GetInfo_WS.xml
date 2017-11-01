@@ -1,0 +1,27 @@
+Running JAX-WS wsimport
+directory: C:\Java\Glassfish4\glassfish\bin
+command: [cmd.exe, /C, wsimport.bat, -d, C:\WinData\Temp\WebService\wsi, -p, mx.com.gentera.helpdesk, -s, C:\WinData\Temp\WebService\wsi\src, -wsdllocation, HPD_IncidentInterface_Create_WS.wsdl, -keep, -verbose, C:\WinData\Temp\WebService\HPD_IncidentInterface_Create_WS.wsdl]
+JDK's tools.jar was not found in C:\Program Files (x86)\Java\lib\tools.jar. Usually this means you are running JRE, not JDK. Please use the java command in JDK 5.0 or later (not JRE.)
+
+C:\Java\Glassfish4\glassfish
+
+WSDL
+C:\WinData\Temp\WebService\HPD_IncidentInterface_Create_WS.wsdl
+
+targetDir
+C:\WinData\Temp\WebService\wsi
+
+Package
+mx.com.gentera.helpdesk
+
+Source
+C:\WinData\Temp\WebService\wsi\src
+
+wsdlLocation
+HPD_IncidentInterface_Create_WS.wsdl
+
+
+
+
+
+wsimport16.bat -d, C:\WinData\Temp\WebService\wsi -p mx.com.gentera.helpdesk -s C:\WinData\Temp\WebService\wsi\src -wsdllocation HPD_IncidentInterface_Create_WS.wsdl -keep -verbose C:\WinData\Temp\WebService\HPD_IncidentInterface_Create_WS.wsdl

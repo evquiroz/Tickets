@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/pages/template/mainLayout.jsp">
+		<put-attribute name="header" value="/pages/template/header.jsp" />
+		<put-attribute name="externalBody" value="" />
+		<put-attribute name="internalBody" value="" />
+		<put-attribute name="footer" value="/pages/template/footer.jsp" />
+	</definition>
+
+	<definition name="errorPage" extends="mainLayout">
+		<put-attribute name="internalBody" value="/pages/template/error.jsp" />
+	</definition>
+
+	<definition name="login" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/empty.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/login.jsp" />
+	</definition>
+
+	<definition name="main" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/user/menuTop.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/menuBottom.jsp" />
+	</definition>
+
+	<definition name="manageUsers" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/localUsers.jsp" />
+	</definition>
+
+	<definition name="editUser" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/editLocalUser.jsp" />
+	</definition>
+
+	<definition name="manageMessages" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/messages.jsp" />
+	</definition>
+
+	<definition name="cIncidents" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/tools/cincidents.jsp" />
+	</definition>
+
+	<definition name="addIncident" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/tools/cincForm.jsp" />
+	</definition>
+
+	<definition name="addImported" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/navigation.jsp" />
+		<put-attribute name="internalBody" value="/pages/tools/importer.jsp" />
+	</definition>
+
+</tiles-definitions>

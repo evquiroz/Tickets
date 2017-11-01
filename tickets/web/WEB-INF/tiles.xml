@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/pages/template/mainLayout.jsp">
+		<put-attribute name="header" value="/pages/template/header.jsp" />
+		<put-attribute name="externalBody" value="" />
+		<put-attribute name="internalBody" value="" />
+		<put-attribute name="footer" value="/pages/template/footer.jsp" />
+	</definition>
+
+    <definition name="basicLayout" template="/pages/template/basiclayout.jsp">
+        <put-attribute name="header" value="/pages/template/header.jsp" />
+        <put-attribute name="internalBody" value="" />
+        <put-attribute name="footer" value="/pages/template/footer.jsp" />
+    </definition>
+
+    <definition name="errorPage" extends="mainLayout">
+	    <put-attribute name="internalBody" value="/pages/template/error.jsp" />
+    </definition>
+
+	<definition name="login" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/empty.jsp" />
+		<put-attribute name="internalBody" value="/pages/user/login.jsp" />
+	</definition>
+
+	<definition name="main" extends="mainLayout">
+		<put-attribute name="internalBody" value="/pages/tickets/mainTop.jsp" />
+		<put-attribute name="externalBody" value="/pages/tickets/mainBottom.jsp" />
+	</definition>
+
+	<definition name="addIncident" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/incident.jsp" />
+		<put-attribute name="internalBody" value="/pages/tickets/recordForm.jsp" />
+	</definition>
+
+	<definition name="addWorkOrder" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/workorder.jsp" />
+		<put-attribute name="internalBody" value="/pages/tickets/recordForm.jsp" />
+	</definition>
+
+	<definition name="receipt" extends="mainLayout">
+		<put-attribute name="externalBody" value="/pages/includes/empty.jsp" />
+		<put-attribute name="internalBody" value="/pages/tickets/receipt.jsp" />
+	</definition>
+
+</tiles-definitions>

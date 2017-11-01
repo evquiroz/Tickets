@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+                        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+  <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+  <constant name="struts.action.extension" value="xhtm" />
+  <constant name="struts.devMode" value="false" />
+  <constant name="struts.custom.i18n.resources" value="labelsResources" />
+  <constant name="struts.ui.theme" value="simple"/>
+
+
+  <!-- ssl-default -->
+  <!-- struts-default -->
+  <package name="active-ssl" extends="ssl-default" namespace="/">
+
+<!--
+    <interceptors>
+      <interceptor-stack name="sslStack">
+        <interceptor-ref name="secure">
+          <param name="useAnnotations">false</param>
+          <param name="httpPort">-1</param>
+          <param name="httpsPort">-1</param>
+        </interceptor-ref>
+        <interceptor-ref name="defaultStack" />
+      </interceptor-stack>
+    </interceptors>
+-->
+  </package>
+
+  <package name="default-without-security" namespace="/" extends="active-ssl">
+
+    <result-types>
+      <result-type name="tiles"
+        class="org.apache.struts2.views.tiles.TilesResult" />
+    </result-types>   
+	
+<!--    
+    <interceptors>
+      <interceptor-stack name="sslStack">
+        <interceptor-ref name="secure">
+          <param name="useAnnotations">false</param>
+          <param name="httpPort">-1</param>
+          <param name="httpsPort">-1</param>
+        </interceptor-ref>
+        <interceptor-ref name="defaultStack" />
+      </interceptor-stack>
+    </interceptors>
+    <default-interceptor-ref name="appDefaultStack" />
+-->
+    <global-results>
+
+      <result name="errorPage" type="tiles">errorPage</result>
+
+      <result name="notValid" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">login</param>
+      </result>
+
+    </global-results>
+
+  </package>
+
+
+<!-- SSL
+  <package name="default-with-security" namespace="/" extends="default-without-security">
+
+    <interceptors>
+    </interceptors>
+
+    <global-results>
+      <result name="notValid" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">login</param>
+      </result>
+    </global-results>
+
+  </package>
+-->
+
+  <package name="default-with-security" namespace="/" extends="default-without-security">
+    <global-results>
+      <result name="unauthenticated" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">login</param>
+      </result>
+    </global-results>
+  </package>
+
+  <package name="user" namespace="/" extends="default-without-security">
+
+  </package>
+
+  <package name="tickets" namespace="/" extends="default-with-security">
+
+    <action name="login">
+      <result type="tiles">login</result>
+    </action>
+
+    <action name="userLogin" class="mx.com.nttdata.web.actions.LdapLoginAction" method="login">
+      <result name="input" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">login</param>
+      </result>
+      <result name="success" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">home</param>
+      </result>
+      <result name="criticalList" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">handleCIncidents</param>
+      </result>
+      <result name="createDerived" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">newDerived</param>
+      </result>
+      <result name="createIncident" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">newIncident</param>
+      </result>            
+      <result name="createWO" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="location">addWorkOrder</param>
+      </result>      
+    </action>
+
+    <action name="main">
+      <result type="tiles">main</result>
+    </action>
+
+    <action name="home" class="mx.com.nttdata.web.actions.MainAction" method="execute">
+      <result name="input"   type="tiles">main</result>
+      <result name="success" type="tiles">main</result>
+    </action>
+
+    <action name="addIncident">
+      <result type="tiles">addIncident</result>
+    </action>
+
+    <action name="addWorkOrder">
+      <result type="tiles">addWorkOrder</result>
+    </action>
+
+    <action name="newIncident" class="mx.com.nttdata.web.actions.TicketAction" method="addTicket">
+      <result name="input" type="tiles">addIncident</result>
+      <result name="success" type="tiles">receipt</result>
+      <result name="error" type="tiles">errorPage</result>
+    </action>
+
+    <action name="newWorkOrder" class="mx.com.nttdata.web.actions.TicketAction" method="addWO">
+      <result name="input" type="tiles">addWorkOrder</result>
+      <result name="success" type="tiles">receipt</result>
+      <result name="error" type="tiles">errorPage</result>
+    </action>
+
+    <action name="receipt">
+      <result type="tiles">receipt</result>
+    </action>
+
+    <action name="logout">
+      <result type="dispatcher">/logout.jsp</result>
+    </action>
+
+    <action name="cIncidents">
+      <result type="tiles">cIncidents</result>
+    </action>
+
+    <action name="handleCIncidents" class="mx.com.nttdata.web.actions.CIncidentsAction" method="execute">
+      <result name="input" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">cIncidents</param>
+      </result>
+      <result name="success" type="redirectAction">
+        <param name="namespace">/service</param>
+        <param name="actionName">cIncidents</param>
+      </result>
+    </action>
+
+    <action name="addDerived">
+      <result type="tiles">addDerived</result>
+    </action>
+
+    <action name="newDerived" class="mx.com.nttdata.web.actions.DerivedAction" method="addDerived">
+      <result name="input" type="tiles">addDerived</result>
+      <result name="success" type="tiles">receipt</result>
+      <result name="error" type="tiles">errorPage</result>
+    </action>
+
+  </package>
+
+</struts>

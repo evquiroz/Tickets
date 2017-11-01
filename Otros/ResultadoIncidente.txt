@@ -1,0 +1,30 @@
+---[HTTP request - http://localhost:9010/HPD_IncidentInterface_Create_WS]---
+Accept: [text/xml, multipart/related]
+Content-Type: [text/xml; charset=utf-8]
+SOAPAction: ["urn:HPD_IncidentInterface_Create_WS/HelpDesk_Submit_Service"]
+User-Agent: [JAX-WS RI 2.2.4-b01]
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Header><AuthenticationInfo xmlns=""><userName>siem</userName><password>qwe123</password></AuthenticationInfo></S:Header><S:Body><HelpDesk_Submit_Service xmlns="urn:HPD_IncidentInterface_Create_WS"><Assigned_Group>Mesa de servicio</Assigned_Group><Assigned_Support_Company>Gentera</Assigned_Support_Company><Assigned_Support_Organization>Assigned_Support_Organization</Assigned_Support_Organization><Categorization_Tier_1>Otros</Categorization_Tier_1><Categorization_Tier_2>Falla</Categorization_Tier_2><Categorization_Tier_3>Portal Web</Categorization_Tier_3><First_Name>flozada01</First_Name><Impact>4-Minor/Localized</Impact><Last_Name>SIEM</Last_Name><Product_Categorization_Tier_1>Servicios</Product_Categorization_Tier_1><Product_Categorization_Tier_2>Software BackOffice</Product_Categorization_Tier_2><Product_Categorization_Tier_3>Remedy</Product_Categorization_Tier_3><Reported_Source>Web</Reported_Source><Service_Type>User Service Restoration</Service_Type><Status>Assigned</Status><Action>CREATE</Action><Summary>Resumen del incidente</Summary><Notes>Ejemplo de las notas del incidente</Notes><Urgency>Baja</Urgency></HelpDesk_Submit_Service></S:Body></S:Envelope>--------------------
+---[HTTP response - http://localhost:9010/HPD_IncidentInterface_Create_WS - 200]---
+null: [HTTP/1.1 200 OK]
+Content-type: [text/xml; charset=utf-8]
+Date: [Mon, 05 Jun 2017 15:32:43 GMT]
+Transfer-encoding: [chunked]
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><HelpDesk_Submit_ServiceResponse xmlns="urn:HPD_IncidentInterface_Create_WS"><Incident_Number>IN0010003243</Incident_Number></HelpDesk_Submit_ServiceResponse></S:Body></S:Envelope>--------------------
+El incidente se creo con el ID: IN0010003243
+
+
+--------------------------------------------------------
+
+---[HTTP request - http://localhost:9012/WOI_WorkOrderInterface_Create_WS]---
+Accept: [text/xml, multipart/related]
+Content-Type: [text/xml; charset=utf-8]
+SOAPAction: ["urn:WOI_WorkOrderInterface_Create_WS/WorkOrder_Submit_Service"]
+User-Agent: [JAX-WS RI 2.2.4-b01]
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Header><AuthenticationInfo xmlns=""><userName>siem</userName><password>qwe123</password></AuthenticationInfo></S:Header><S:Body><WorkOrder_Submit_Service xmlns="urn:WOI_WorkOrderInterface_Create_WS"><Submitter>SIEM</Submitter><Status>Assigned</Status><Short_Description>Resumen de la requisición</Short_Description><RequesterLoginID>flozada02</RequesterLoginID><z1D_CommunicationSource>Web</z1D_CommunicationSource><Summary>Resumen de la requisición</Summary><Manager_Support_Group_Name>Mesa de servicio</Manager_Support_Group_Name><Categorization_Tier_1>Otros</Categorization_Tier_1><Categorization_Tier_2>Falla</Categorization_Tier_2><Categorization_Tier_3>Portal Web</Categorization_Tier_3><z1D_Action>CREATE</z1D_Action><Person_ID>PPL000000287901</Person_ID><Detailed_Description>Ejemplo de las notas de la requisición</Detailed_Description><Priority>Low</Priority><Work_Order_Type>General</Work_Order_Type><WorkOrder_ID></WorkOrder_ID><Requester_Support_Organization>Back End</Requester_Support_Organization><Product_Cat_Tier_1_2_>Servicios</Product_Cat_Tier_1_2_><Product_Cat_Tier_2__2_>Software BackOffice</Product_Cat_Tier_2__2_><Product_Cat_Tier_3__2_>Remedy</Product_Cat_Tier_3__2_><Support_Organization>Back End</Support_Organization><Support_Company>Gentera</Support_Company><Support_Group_Name>Back End</Support_Group_Name></WorkOrder_Submit_Service></S:Body></S:Envelope>--------------------
+---[HTTP response - http://localhost:9012/WOI_WorkOrderInterface_Create_WS - 200]---
+null: [HTTP/1.1 200 OK]
+Content-type: [text/xml; charset=utf-8]
+Date: [Mon, 05 Jun 2017 19:01:40 GMT]
+Transfer-encoding: [chunked]
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><WorkOrder_Submit_ServiceResponse xmlns="urn:WOI_WorkOrderInterface_Create_WS"><WorkOrder_ID></WorkOrder_ID></WorkOrder_Submit_ServiceResponse></S:Body></S:Envelope>--------------------
+La requisició se creo con el ID: 

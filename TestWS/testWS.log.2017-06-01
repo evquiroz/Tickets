@@ -1,0 +1,1195 @@
+[DEBUG] 2017-06-01 00:41:00,816 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,828 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,834 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file classpath:/tickets.properties at null: unknown protocol: classpath
+[ERROR] 2017-06-01 00:41:00,856 mx.com.nttdata.util.Messages getString - Ocurrió un problema cargando configuración local del archivo: classpath:/tickets.properties
+org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source classpath:/tickets.properties
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:259)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:238)
+	at org.apache.commons.configuration.AbstractFileConfiguration.<init>(AbstractFileConfiguration.java:158)
+	at org.apache.commons.configuration.PropertiesConfiguration.<init>(PropertiesConfiguration.java:253)
+	at mx.com.nttdata.util.Properties.getString(Properties.java:55)
+	at mx.com.nttdata.util.Properties.getInt(Properties.java:34)
+	at mx.com.nttdata.remedy.RemedyConector.<init>(RemedyConector.java:77)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:44)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 00:41:00,885 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,888 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,892 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file classpath:/tickets.properties at null: unknown protocol: classpath
+[ERROR] 2017-06-01 00:41:00,905 mx.com.nttdata.util.Messages getString - Ocurrió un problema cargando configuración local del archivo: classpath:/tickets.properties
+org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source classpath:/tickets.properties
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:259)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:238)
+	at org.apache.commons.configuration.AbstractFileConfiguration.<init>(AbstractFileConfiguration.java:158)
+	at org.apache.commons.configuration.PropertiesConfiguration.<init>(PropertiesConfiguration.java:253)
+	at mx.com.nttdata.util.Properties.getString(Properties.java:55)
+	at mx.com.nttdata.util.Properties.getString(Properties.java:44)
+	at mx.com.nttdata.remedy.RemedyConector.<init>(RemedyConector.java:78)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:44)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 00:41:00,911 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,914 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is classpath:/tickets.properties
+[DEBUG] 2017-06-01 00:41:00,919 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file classpath:/tickets.properties at null: unknown protocol: classpath
+[ERROR] 2017-06-01 00:41:00,931 mx.com.nttdata.util.Messages getString - Ocurrió un problema cargando configuración local del archivo: classpath:/tickets.properties
+org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source classpath:/tickets.properties
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:259)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:238)
+	at org.apache.commons.configuration.AbstractFileConfiguration.<init>(AbstractFileConfiguration.java:158)
+	at org.apache.commons.configuration.PropertiesConfiguration.<init>(PropertiesConfiguration.java:253)
+	at mx.com.nttdata.util.Properties.getString(Properties.java:55)
+	at mx.com.nttdata.util.Properties.getString(Properties.java:44)
+	at mx.com.nttdata.remedy.RemedyConector.<init>(RemedyConector.java:79)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:44)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 00:44:40,016 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 00:44:40,034 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 00:44:40,038 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 00:44:40,050 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 00:44:40,053 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 00:44:47,455 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 00:46:12,406 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 00:46:48,637 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 00:47:26,902 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio
+[ERROR] 2017-06-01 00:48:19,305 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 00:48:40,685 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 00:55:02,664 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 00:55:02,678 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 00:55:02,681 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 00:55:02,696 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 00:55:02,699 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 00:55:02,758 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 00:55:04,698 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 00:55:25,989 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 00:55:32,221 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio
+[ERROR] 2017-06-01 00:56:22,803 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 00:56:22,808 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 00:58:06,364 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 00:58:06,378 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 00:58:06,382 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 00:58:06,394 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 00:58:06,397 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 00:58:06,460 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 00:58:09,020 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 00:58:13,030 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 00:58:14,593 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://hysteria:9010/HPD_IncidentInterface_Create_WS
+[ERROR] 2017-06-01 00:59:13,746 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS
+java.io.IOException: Got Connection timed out: connect while opening stream from http://hysteria:9010/HPD_IncidentInterface_Create_WS?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 00:59:13,750 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 01:24:58,496 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:24:58,533 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:24:58,535 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:24:58,542 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:24:58,544 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:24:58,568 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:24:58,582 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:25:07,227 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:25:09,852 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS
+[ERROR] 2017-06-01 01:25:20,875 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}IncidentServerService
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 01:27:43,798 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 01:29:43,580 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:29:43,585 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:29:43,586 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:29:43,592 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:29:43,592 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:29:43,617 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:29:43,631 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:29:47,112 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:29:51,275 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService
+[ERROR] 2017-06-01 01:29:56,011 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}IncidentServerService
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 01:30:23,977 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 01:33:01,176 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:33:01,185 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:33:01,188 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:33:01,198 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:33:01,199 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:33:01,229 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:33:01,251 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:33:10,298 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:33:11,017 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService
+[ERROR] 2017-06-01 01:33:15,628 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:null,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got http://localhost:9010/IncidentServerService while opening stream from http://localhost:9010/IncidentServerService
+java.io.IOException: Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[ERROR] 2017-06-01 01:34:00,963 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:51)
+	at mx.com.nttdata.TestMain.run(TestMain.java:88)
+	at mx.com.nttdata.TestMain.main(TestMain.java:95)
+[DEBUG] 2017-06-01 01:42:09,236 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:42:09,240 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:42:09,241 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:42:09,246 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:42:09,247 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:42:09,267 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:42:09,278 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:42:09,280 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:42:09,282 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService?wsdl
+[ERROR] 2017-06-01 01:42:09,349 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/IncidentServerService?wsdl. It failed with: 
+	Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.FileNotFoundException: http://localhost:9010/IncidentServerService?wsdl
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:42:09,351 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:42:56,306 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:42:56,310 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:42:56,311 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:42:56,317 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:42:56,318 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:42:56,338 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:42:56,348 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:42:56,349 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:42:56,353 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+[ERROR] 2017-06-01 01:42:56,445 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}IncidentServerService
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 01:42:56,447 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:43:54,568 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:43:54,572 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:43:54,573 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:43:54,578 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:43:54,579 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:43:54,597 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:43:54,606 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:43:54,607 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:43:54,607 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService?wsdl
+[ERROR] 2017-06-01 01:43:54,666 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/IncidentServerService?wsdl. It failed with: 
+	Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.FileNotFoundException: http://localhost:9010/IncidentServerService?wsdl
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:43:54,668 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:44:14,611 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:44:14,614 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:44:14,615 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:44:14,621 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:44:14,621 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:44:14,641 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:44:14,650 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:44:14,650 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:44:14,651 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService?WSDL
+[ERROR] 2017-06-01 01:44:14,707 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/IncidentServerService?WSDL. It failed with: 
+	Got http://localhost:9010/IncidentServerService?WSDL while opening stream from http://localhost:9010/IncidentServerService?WSDL.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got http://localhost:9010/IncidentServerService?WSDL while opening stream from http://localhost:9010/IncidentServerService?WSDL
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.FileNotFoundException: http://localhost:9010/IncidentServerService?WSDL
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:44:14,709 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:44:46,500 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:44:46,504 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:44:46,505 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:44:46,511 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:44:46,511 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:44:46,531 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:44:46,541 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:44:46,542 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:44:46,543 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService
+[ERROR] 2017-06-01 01:44:46,597 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got http://localhost:9010/IncidentServerService while opening stream from http://localhost:9010/IncidentServerService
+java.io.IOException: Got http://localhost:9010/IncidentServerService?wsdl while opening stream from http://localhost:9010/IncidentServerService?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 01:44:46,599 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:45:22,109 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:45:22,121 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:45:22,122 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:45:22,127 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:45:22,128 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:45:22,148 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:45:22,158 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:45:22,159 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:45:22,162 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/IncidentServerService?WSDL
+[ERROR] 2017-06-01 01:45:22,223 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/IncidentServerService?WSDL. It failed with: 
+	Got http://localhost:9010/IncidentServerService?WSDL while opening stream from http://localhost:9010/IncidentServerService?WSDL.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got http://localhost:9010/IncidentServerService?WSDL while opening stream from http://localhost:9010/IncidentServerService?WSDL
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.FileNotFoundException: http://localhost:9010/IncidentServerService?WSDL
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:45:22,225 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:46:30,355 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:46:30,360 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:46:30,360 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:46:30,366 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:46:30,366 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:46:30,385 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:46:30,395 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:46:30,396 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:46:30,397 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+[ERROR] 2017-06-01 01:46:31,448 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl. It failed with: 
+	Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:46:31,451 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:46:56,053 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:46:56,058 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:46:56,059 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:46:56,064 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:46:56,065 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:46:56,085 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:46:56,097 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:46:56,098 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:46:56,099 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService
+[ERROR] 2017-06-01 01:46:58,154 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.IOException: Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService
+java.io.IOException: Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:183)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 01:46:58,155 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:47:16,927 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:47:16,933 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:47:16,934 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:47:16,941 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:47:16,943 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:47:16,968 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:47:16,985 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:47:21,484 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:47:21,976 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+[ERROR] 2017-06-01 01:47:34,893 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl. It failed with: 
+	Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WSService?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 01:47:37,848 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 01:57:18,516 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 01:57:18,520 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 01:57:18,521 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 01:57:18,527 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 01:57:18,527 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 01:57:18,549 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 01:57:18,560 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 01:57:18,561 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 01:57:18,562 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?WSDL
+[ERROR] 2017-06-01 01:57:18,652 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}IncidentServerService
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 01:57:18,654 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:06:06,967 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:06:06,972 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:06:06,973 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:06:06,978 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:06:06,979 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:06:07,002 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:06:07,012 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:06:07,013 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:06:07,013 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?WSDL
+[ERROR] 2017-06-01 02:06:07,105 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WS
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:06:07,107 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:14:11,084 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:14:11,087 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:14:11,088 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:14:11,096 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:14:11,097 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:14:11,116 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:14:11,126 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:14:11,127 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:14:11,130 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WSService?WSDL
+[ERROR] 2017-06-01 02:14:11,215 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WS
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:14:11,216 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:14:38,439 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:14:38,443 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:14:38,444 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:14:38,449 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:14:38,450 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:14:38,473 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:14:38,482 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:14:38,482 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:14:38,483 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS?WSDL
+[ERROR] 2017-06-01 02:14:38,566 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WS
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:14:38,568 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:15:40,020 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:15:40,026 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:15:40,027 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:15:40,032 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:15:40,033 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:15:40,053 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:15:40,067 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:15:40,068 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:15:40,068 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl
+[ERROR] 2017-06-01 02:15:40,157 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSService is not a valid service. Valid services are: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WS
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:224)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:15:40,158 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:19:36,869 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:19:36,872 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:19:36,873 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:19:36,878 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:19:36,878 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:19:36,898 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:19:36,907 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:19:36,908 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:19:36,908 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl
+[ERROR] 2017-06-01 02:19:37,961 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl. It failed with: 
+	Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got Connection refused: connect while opening stream from http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 02:19:37,964 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:20:14,192 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:20:14,196 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:20:14,198 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:20:14,203 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:20:14,204 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:20:14,223 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:20:14,232 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:20:14,233 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:20:14,233 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl
+[DEBUG] 2017-06-01 02:20:14,359 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Agregando Handler
+[DEBUG] 2017-06-01 02:20:14,360 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Recuperando WS Proxy
+[ERROR] 2017-06-01 02:20:14,364 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSPortTypeSoap is not a valid port. Valid ports are: {urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSPortTypePortTypePort
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPortModel(WSServiceDelegate.java:642)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:312)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:295)
+	at javax.xml.ws.Service.getPort(Service.java:119)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.getHPDIncidentInterfaceCreateWSPortTypeSoap(HPDIncidentInterfaceCreateWSService.java:85)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:136)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:20:14,365 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:24:30,259 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:24:30,264 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:24:30,264 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:24:30,269 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:24:30,270 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:24:30,289 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:24:30,299 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:24:30,299 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:24:30,302 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:9010/HPD_IncidentInterface_Create_WS?wsdl
+[DEBUG] 2017-06-01 02:24:30,392 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Agregando Handler
+[DEBUG] 2017-06-01 02:24:30,393 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Recuperando WS Proxy
+[ERROR] 2017-06-01 02:24:30,650 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Method helpDeskSubmitService is exposed as WebMethod, but there is no corresponding wsdl operation with name HelpDesk_Submit_Service in the wsdl:portType{urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSPortType
+	at com.sun.xml.internal.ws.model.JavaMethodImpl.freeze(JavaMethodImpl.java:341)
+	at com.sun.xml.internal.ws.model.AbstractSEIModelImpl.freeze(AbstractSEIModelImpl.java:94)
+	at com.sun.xml.internal.ws.model.RuntimeModeler.buildRuntimeModel(RuntimeModeler.java:240)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.createSEIPortInfo(WSServiceDelegate.java:673)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.addSEI(WSServiceDelegate.java:661)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:330)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:313)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:295)
+	at javax.xml.ws.Service.getPort(Service.java:119)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.getHPDIncidentInterfaceCreateWSPortTypeSoap(HPDIncidentInterfaceCreateWSService.java:85)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:136)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[ERROR] 2017-06-01 02:24:30,652 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:40:35,640 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:40:35,644 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:40:35,644 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:40:35,649 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:40:35,650 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:40:35,668 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:40:35,676 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:40:35,677 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:40:35,678 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/HPD_IncidentInterface_Create_WS
+[ERROR] 2017-06-01 02:40:35,770 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.streaming.XMLStreamReaderException: XML reader error: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:256)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:84)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:99)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:89)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.hasWSDLDefinitions(RuntimeWSDLParser.java:231)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:141)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:598)
+	at com.sun.xml.internal.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:81)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:65)
+	... 16 more
+[ERROR] 2017-06-01 02:40:35,774 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:41:11,757 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:41:11,762 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:41:11,763 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:41:11,770 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:41:11,770 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:41:11,791 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:41:11,810 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:41:21,976 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:41:23,591 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/HPD_IncidentInterface_Create_WS
+[ERROR] 2017-06-01 02:41:32,106 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.streaming.XMLStreamReaderException: XML reader error: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:256)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:84)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:99)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:89)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.hasWSDLDefinitions(RuntimeWSDLParser.java:231)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:141)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:598)
+	at com.sun.xml.internal.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:81)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:65)
+	... 16 more
+[ERROR] 2017-06-01 02:41:36,023 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:47:39,003 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:47:39,006 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:47:39,007 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:47:39,012 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:47:39,013 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:47:39,030 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:47:39,039 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:47:39,039 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:47:39,040 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl
+[ERROR] 2017-06-01 02:47:39,095 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl. It failed with: 
+	Got Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl while opening stream from http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl while opening stream from http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS/HPD_IncidentInterface_Create_WS?wsdl
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1627)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 02:47:39,097 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:47:53,265 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:47:53,268 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:47:53,269 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:47:53,274 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:47:53,274 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:47:53,293 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:47:53,302 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:47:53,303 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:47:53,305 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl
+[ERROR] 2017-06-01 02:47:53,363 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl. It failed with: 
+	Got Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl while opening stream from http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:173)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:155)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: java.io.IOException: Got Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl while opening stream from http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:842)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:283)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:140)
+	... 12 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: http://localhost:8080/HPD_IncidentInterface_Create_WS?wsdl
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1627)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:827)
+	... 14 more
+[ERROR] 2017-06-01 02:47:53,365 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:48:09,926 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:48:09,929 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:48:09,930 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:48:09,935 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:48:09,936 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:48:09,954 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:48:09,963 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:48:09,964 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:48:09,965 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/
+[ERROR] 2017-06-01 02:48:10,037 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.streaming.XMLStreamReaderException: XML reader error: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:256)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:84)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:99)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:89)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.hasWSDLDefinitions(RuntimeWSDLParser.java:231)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:141)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:598)
+	at com.sun.xml.internal.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:81)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:65)
+	... 16 more
+[ERROR] 2017-06-01 02:48:10,041 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+[DEBUG] 2017-06-01 02:48:28,779 org.apache.commons.configuration.PropertiesConfiguration setFileName - FileName set to tickets.properties
+[DEBUG] 2017-06-01 02:48:28,783 org.apache.commons.configuration.ConfigurationUtils locate - ConfigurationUtils.locate(): base is null, name is tickets.properties
+[DEBUG] 2017-06-01 02:48:28,783 org.apache.commons.configuration.DefaultFileSystem locateFromURL - Could not locate file tickets.properties at null: no protocol: tickets.properties
+[DEBUG] 2017-06-01 02:48:28,788 org.apache.commons.configuration.ConfigurationUtils locateFromClasspath - Loading configuration from the context classpath (tickets.properties)
+[DEBUG] 2017-06-01 02:48:28,789 org.apache.commons.configuration.PropertiesConfiguration setBasePath - Base path set to file:///E:/Customers/Gentera/TestWS/build/classes/tickets.properties
+[DEBUG] 2017-06-01 02:48:28,806 mx.com.nttdata.util.Messages getString - #### Cargando la configuración local desde: [tickets.properties]
+[DEBUG] 2017-06-01 02:48:28,815 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Creando ticket para incidente
+[DEBUG] 2017-06-01 02:48:28,816 mx.com.nttdata.remedy.RemedyConector printTicket - RemedyConnector.printTicket(). Datos del Ticket a crear:
+[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+[DEBUG] 2017-06-01 02:48:28,816 mx.com.nttdata.remedy.RemedyConector createincident - Incidente. Conectándose al servicio: http://localhost:8080/HPD_IncidentInterface_Create_WS
+[ERROR] 2017-06-01 02:48:28,884 mx.com.nttdata.remedy.RemedyConector createincident - RemedyConector().createincident. Se presentó un problema creando el incidente.[id:null,remedyID:null,companyName:Gentera,customer:flozada01,title:Resumen del incidente,notes:Ejemplo de las notas del incidente,action:CREATE,priority:Low,status:Assigned,reason:Initial Status,lastname:SIEM,personID:PPL000000287901,source:Web,supportGroup:Back End,categoryLevel01:Otros,categoryLevel02:Falla,categoryLevel03:Portal Web,productLevel01:Servicios,productLevel02:Software BackOffice,productLevel03:Remedy,impact:4-Minor/Localized,urgency:Baja,assignedGroup:Mesa de servicio,serviceType:Service Restoration]
+com.sun.xml.internal.ws.streaming.XMLStreamReaderException: XML reader error: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:256)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:84)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:99)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:89)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.hasWSDLDefinitions(RuntimeWSDLParser.java:231)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:141)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:120)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:258)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:221)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:169)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:101)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at mx.com.gentera.helpdesk.incident.HPDIncidentInterfaceCreateWSService.<init>(HPDIncidentInterfaceCreateWSService.java:60)
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:121)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Final de archivo prematuro.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:598)
+	at com.sun.xml.internal.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:81)
+	at com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:65)
+	... 16 more
+[ERROR] 2017-06-01 02:48:28,889 mx.com.nttdata.service.TicketService createRemedyTicket - TicketService.createRemedyTicket(). Error dande de alta el ticket
+java.lang.Exception: Error generando el ticket para su incidente
+	at mx.com.nttdata.remedy.RemedyConector.createincident(RemedyConector.java:215)
+	at mx.com.nttdata.service.TicketService.createRemedyTicket(TicketService.java:48)
+	at mx.com.nttdata.TestMain.testIncident(TestMain.java:52)
+	at mx.com.nttdata.TestMain.run(TestMain.java:89)
+	at mx.com.nttdata.TestMain.main(TestMain.java:96)

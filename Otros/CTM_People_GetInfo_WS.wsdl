@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<wsdl:definitions targetNamespace="urn:CTM_People_GetInfo_WS" xmlns:s0="urn:CTM_People_GetInfo_WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:types>
+<xsd:schema elementFormDefault="qualified" targetNamespace="urn:CTM_People_GetInfo_WS">
+  <xsd:element name="CTM_GetPeopleInfo" type="s0:InputMapping3" /> 
+<xsd:complexType name="InputMapping3">
+<xsd:sequence>
+  <xsd:element name="Qualification" type="xsd:string" /> 
+  <xsd:element default="0" minOccurs="0" name="startRecord" type="xsd:string" /> 
+  <xsd:element default="20" minOccurs="0" name="maxLimit" type="xsd:string" /> 
+  </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="CTM_GetPeopleInfoResponse" type="s0:OutputMapping3" /> 
+<xsd:complexType name="OutputMapping3">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" name="getListValues">
+<xsd:complexType>
+<xsd:sequence>
+  <xsd:element default="PPL" minOccurs="0" name="ID_Persona" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="ID_de_inicio_de_sesion" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="ID_Corporativa" type="xsd:string" /> 
+  <xsd:element name="Nombre_s" type="xsd:string" /> 
+  <xsd:element name="Apellido_s" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Puesto" type="xsd:string" /> 
+  <xsd:element name="Empresa" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Organizacion" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Departamento" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Zona" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Grupo_de_Ubicaciones" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Ubicacion" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Correo_electronico" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Numero_Local" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="Extension" type="xsd:string" /> 
+  </xsd:sequence>
+  </xsd:complexType>
+  </xsd:element>
+  </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="AuthenticationInfo" type="s0:AuthenticationInfo" /> 
+<xsd:complexType name="AuthenticationInfo">
+<xsd:sequence>
+  <xsd:element name="userName" type="xsd:string" /> 
+  <xsd:element name="password" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="authentication" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="locale" type="xsd:string" /> 
+  <xsd:element minOccurs="0" name="timeZone" type="xsd:string" /> 
+  </xsd:sequence>
+  </xsd:complexType>
+  </xsd:schema>
+  </wsdl:types>
+<wsdl:message name="ARAuthenticate">
+  <wsdl:part element="s0:AuthenticationInfo" name="parameters" /> 
+  </wsdl:message>
+<wsdl:message name="CTM_GetPeopleInfoSoapOut">
+  <wsdl:part element="s0:CTM_GetPeopleInfoResponse" name="parameters" /> 
+  </wsdl:message>
+<wsdl:message name="CTM_GetPeopleInfoSoapIn">
+  <wsdl:part element="s0:CTM_GetPeopleInfo" name="parameters" /> 
+  </wsdl:message>
+<wsdl:portType name="CTM_People_WSPortTypePortType">
+<wsdl:operation name="CTM_GetPeopleInfo">
+  <wsdl:input message="s0:CTM_GetPeopleInfoSoapIn" /> 
+  <wsdl:output message="s0:CTM_GetPeopleInfoSoapOut" /> 
+  </wsdl:operation>
+  </wsdl:portType>
+<wsdl:binding name="CTM_People_WSPortTypeSoapBinding" type="s0:CTM_People_WSPortTypePortType">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" /> 
+<wsdl:operation name="CTM_GetPeopleInfo">
+  <soap:operation soapAction="urn:CTM_People_GetInfo_WS/CTM_GetPeopleInfo" style="document" /> 
+<wsdl:input>
+  <soap:header message="s0:ARAuthenticate" part="parameters" use="literal" /> 
+  <soap:body use="literal" /> 
+  </wsdl:input>
+<wsdl:output>
+  <soap:body use="literal" /> 
+  </wsdl:output>
+  </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CTM_People_GetInfo_WSService">
+    <wsdl:documentation>CTM:People_GetInfo</wsdl:documentation> 
+    <wsdl:port binding="s0:CTM_People_WSPortTypeSoapBinding" name="CTM_People_WSPortTypeSoap">
+      <soap:address location="https://bcbeta100/arsys/services/ARService?server=BCBETA100&amp;webService=CTM_People_GetInfo_WS" /> 
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

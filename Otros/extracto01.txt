@@ -1,0 +1,30 @@
+DEBUG UserDAO - [mx.com.nttdata.dao.UserDAO].authenticate():Sql:       [SELECT LoginName FROM Tck_LocalUsers WHERE LoginName = ? AND Secret = ? AND Status = 'A']
+DEBUG UserDAO - [mx.com.nttdata.dao.UserDAO].authenticate():LoginName: [flozada]
+DEBUG UserDAO - [mx.com.nttdata.dao.UserDAO].authenticate():LoginName: [2431244958346d37474645244e525352624a7a764a766e45392f654e6d63766e4d30]
+
+
+SELECT LoginName FROM Tck_LocalUsers WHERE LoginName = 'flozada' AND Secret = '2431244958346d37474645244e525352624a7a764a766e45392f654e6d63766e4d30' AND Status = 'A'
+
+
+Ticket101
+243124382e636b49435a6624614b614b4148622f4150364557626c726973772f6830
+
+
+
+http://localhost:8080/tickets/service/login.xhtm
+http://localhost:8080/tickets/service/main.xhtm
+http://localhost:8080/tickets/service/addIncident.xhtm
+http://localhost:8080/tickets/service/addWorkOrder.xhtm
+
+<s:if test="#ticketType == 1">
+  <s:form action="newIncident" namespace="/service" method="post" theme="simple">
+</s:if>
+<s:elseif test="#ticketType == 2">
+  <s:form action="newWorkOrder" namespace="/service" method="post" theme="simple">
+</s:elseif>
+
+<s:form action="newIncident" namespace="/service" method="post" theme="simple">
+
+
+<s:form id="ticketForm" name="ticketForm" action="newIncident" namespace="/service" method="post" theme="simple">
+

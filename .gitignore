@@ -1,0 +1,16 @@
+test
+build
+dist
+nbproject/private/
+*.log
+classes
+bin
+.history
+*.class
+*.lock
+*.log
+*.pdom
+*.pdom
+.plugins
+.mylyn
+
