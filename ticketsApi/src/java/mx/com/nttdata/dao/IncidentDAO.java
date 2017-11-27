@@ -3,6 +3,8 @@ package mx.com.nttdata.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.RowId;
+import java.sql.Types;
 import javax.sql.DataSource;
 
 import mx.com.nttdata.beans.ITicket;
@@ -26,7 +28,7 @@ public class IncidentDAO extends AbstractTicketDAO {
     super( ds, INCIDENTS_TABLE, INCIDENTS_KEY );
     this.sqlCreate = "INSERT INTO Tck_Incidents ( RemedyID, CompanyName, Customer, Title, Notes, Priority, Impact, " +
                      "Urgency, AssignedGroup, Source, Category_Lvl01, Category_Lvl02, Category_Lvl03, " +
-                     "Product_Lvl01, Product_Lvl02, Product_Lvl03 ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )";
+                     "Product_Lvl01, Product_Lvl02, Product_Lvl03, Main_TicketID ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )";
     this.sqlUpdate = "UPDATE Tck_Incidents SET Title = ?, Notes = ?, Priority = ?, Impact = ?, " +
                      "Urgency = ?, AssignedGroup = ?, Category_Lvl01 = ?, Category_Lvl02 = ?, " +
                      "Category_Lvl03 = ?, Product_Lvl01 = ?, Product_Lvl02 = ?, Product_Lvl03 " +
@@ -47,6 +49,9 @@ public class IncidentDAO extends AbstractTicketDAO {
     ResultSet         rs        = null;
     int               result    = 0;
 
+    Incident          iticket   = ((Incident) record);
+    String            parentID  = iticket.getPArentID();
+
     debug("create", "Sql:       [" + this.sqlCreate + "]");
     debug("create", "Remedy ID: [" + record.getRemedyID() + "]");
     debug("create", "Empresa:   [" + record.getCompanyName() + "]");
@@ -58,6 +63,7 @@ public class IncidentDAO extends AbstractTicketDAO {
     debug("create", "Grupo:     [" + ((Incident) record).getAssignedGroup() + "]");
     debug("create", "Categoria: [" + record.getCategoryLevel01() + "->" + record.getCategoryLevel02() + "->" + record.getCategoryLevel03() + "]" );
     debug("create", "Producto:  [" + record.getProductLevel01() + "->" + record.getProductLevel02() + "->" + record.getProductLevel03() + "]" );
+    debug("create", "ParentID:  [" + parentID + "]" );
 
     try {
       conn = this.getConnection();
@@ -79,12 +85,20 @@ public class IncidentDAO extends AbstractTicketDAO {
       st.setString( 14, record.getProductLevel01());
       st.setString( 15, record.getProductLevel02());
       st.setString( 16, record.getProductLevel03());
+      if ( parentID == null || parentID.isEmpty())
+         st.setNull( 17, Types.VARCHAR );
+      else
+         st.setString( 17, parentID );
       int rows = st.executeUpdate();
 
       if ( rows > 0 ) {
          rs = st.getGeneratedKeys();
-         if ( rs.next())
-            result = rs.getInt( 1 );
+         if ( rs.next()) {
+            // result = rs.getInt( 1 );
+            RowId rid = rs.getRowId( 1 );
+            this.debug( "create", "Se cre\u00f3 un incidente con ID " + rid.toString());
+            result = 1;
+         }
       }
       if ( result <= 0 )
          throw new Exception("No se obtuvo un ID para el incidente con ID de Remedy: " + record.getRemedyID());

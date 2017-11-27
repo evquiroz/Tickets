@@ -13,7 +13,8 @@
 
   <!-- ssl-default -->
   <!-- struts-default -->
-  <package name="active-ssl" extends="ssl-default" namespace="/">
+  <!-- package name="active-ssl" extends="ssl-default" namespace="/" -->
+  <package name="active-ssl" extends="struts-default"  namespace="/">
 
 <!--
     <interceptors>

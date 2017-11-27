@@ -26,8 +26,9 @@
 
 <s:form id="ticketForm" name="ticketForm" namespace="/service" method="post" theme="simple">
 
+  <s:hidden name="ticketType"   id="ticketType"     value="1" />
   <s:hidden name="parentID"     id="parentID"       value="%{#session.parID}" />
-  <s:hidden name="remedyIO"     id="remedyIO"       value="%{#session.remedyID}" />
+  <s:hidden name="remedyID"     id="remedyID"       value="%{#session.remedyID}" />
 
   <s:hidden name="companyName"  id="companyName"    value="%{#session.svcParams.params.companyName}" />
   <s:hidden name="customer"     id="customer"       value="%{#session.appLoginName}" />

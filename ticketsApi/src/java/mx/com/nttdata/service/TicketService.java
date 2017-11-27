@@ -52,7 +52,7 @@ public class TicketService implements ITicketService {
   public TicketService() {
 
     logger       = Logger.getLogger( this.getClass());
-    dsName       = Properties.getString( IGlobalConstants.PROP_DS_NAME );    
+    dsName       = Properties.getString( IGlobalConstants.PROP_DS_NAME );
     cfName       = Properties.getString( IGlobalConstants.PROP_DS_FACTORY );
     this.devMode = Properties.getInt( IGlobalConstants.PROP_DEV_MODE, 0 ) == 1;
 
@@ -76,32 +76,32 @@ public class TicketService implements ITicketService {
     }
     else
     {
-/*        
+/*
       try {
         RemedyConector rc = new RemedyConector();
         if ( ticketType == IGlobalConstants.TICKET_INCIDENT )
-        {    
+        {
            logger.debug("TicketService.createRemedyTicket(). Creando ticket para incidente" );
            result = rc.createincident((Incident) record );
-        }   
+        }
         else
-        {    
+        {
            logger.debug("TicketService.createRemedyTicket(). Creando ticket para requisici\u00f3n" );
            result = rc.createWorkOrder((WorkOrder) record );
-        }   
+        }
       } catch ( Exception ex ) {
-        
+
         logger.error( "TicketService.createRemedyTicket(). Error dande de alta el ticket", ex );
       }
-*/   
+*/
       try {
         RemedyConsumer consumer = new RemedyConsumer();
         consumer.connect();
         result = consumer.createTicket( record, record.getPersonID());
         consumer.disconnect();
-        
+
       } catch ( Exception ex ) {
-          
+
         logger.error( "TicketService.createRemedyTicket(). Error dande de alta el ticket", ex );
       }
     }
@@ -115,8 +115,8 @@ public class TicketService implements ITicketService {
     record.setRemedyID( remedyID );
 
     if ( remedyID == null || remedyID.isEmpty())
-       return null; 
-    
+       return null;
+
     ITicketDAO dao  = this.getDAO( ticketType );
     try {
       dao.create( record );
@@ -158,7 +158,7 @@ public class TicketService implements ITicketService {
   private String getMockRemedyID( Integer ticketType, ITicket record ) {
 
     String result = ticketType == IGlobalConstants.TICKET_INCIDENT
-                  ? "IN001000" : "WO002000";
+                  ? "INC01000" : "WO002000";
     Calendar cal  = Calendar.getInstance();
     result += cal.get( Calendar.MINUTE ) + cal.get( Calendar.SECOND );
 
@@ -201,15 +201,15 @@ public class TicketService implements ITicketService {
     String result = Properties.getString( "mail.fakeTo", "compartamos.mx" );
     /*
     String umail  = null;
-    
+
     try {
       RemedyDataSearcher search = new RemedyDataSearcher();
       umail = search.getCustomerMail( login );
-        
+
     } catch ( Exception ex ) {
-        
+
       logger.error("TicketsService.getUserMail(). Error recuperando el correo del usuario: " + login, ex );
-    }    
+    }
     return ( umail == null || umail.isEmpty()) ? result : umail;
     */
     return result;

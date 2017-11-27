@@ -113,7 +113,7 @@
               <input type="hidden" id="uuid_${ix}" value="${ TicketUtils.cloackData( uuid )}" xx="${loginName}" yy="${session.appLoginName}" />
               <s:if test="#session.appLoginName != null">
                 <a href="#" onClick="javascript:doDerivedIncident( ${ix} )" title="${derivedTitle}">
-                  <img src="${pageContext.request.contextPath}/img/nuevoIncidente.gif" alt="${derivedTitle}" width="78" height="24" /></a>
+                  <img src="${pageContext.request.contextPath}/img/nuevoIncidente2.gif" alt="${derivedTitle}" width="120" height="24" /></a>
               </s:if>
             </td>
           </tr>

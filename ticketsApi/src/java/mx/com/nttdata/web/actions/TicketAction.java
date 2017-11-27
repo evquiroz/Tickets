@@ -60,6 +60,7 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   private String productLevel01;
   private String productLevel02;
   private String productLevel03;
+  private String parentID;
 
   private String titleFieldErrror;
   private String notesFieldErrror;
@@ -71,18 +72,18 @@ public class TicketAction extends ActionSupport implements SessionAware  {
     String loginName = (String) session.get( IGlobalConstants.SESS_LOGIN_NAME );
     if ( loginName == null || loginName.isEmpty()) {
        String target = IGlobalConstants.PAGE_INCIDENT_FORM;
-       switch ( this.ticketType ) { 
+       switch ( this.ticketType ) {
          case IGlobalConstants.TICKET_WORKORDER : target = IGlobalConstants.PAGE_WORKORDER_FORM;
               break;
          case IGlobalConstants.TICKET_INCIDENT  : target = IGlobalConstants.PAGE_INCIDENT_FORM;
               break;
-       }       
+       }
        session.put( IGlobalConstants.SESS_TARGET_URL, target );
        return "notValid";
     }
 
     if (( title == null || title.isEmpty()) || ( notes == null || notes.isEmpty())) {
-       
+
        return Action.INPUT;
     }
 
@@ -104,7 +105,7 @@ public class TicketAction extends ActionSupport implements SessionAware  {
     bean.setPersonID( personID );
     bean.setAction( remedyAction );
     bean.setLastName( lastname );
-    
+
     bean.setCategoryLevel01( categoryLevel01 );
     bean.setCategoryLevel02( categoryLevel02 );
     bean.setCategoryLevel03( categoryLevel03 );
@@ -119,6 +120,7 @@ public class TicketAction extends ActionSupport implements SessionAware  {
        ((Incident) bean).setUrgency( urgency );
        ((Incident) bean).setServiceType( serviceType );
        ((Incident) bean).setAssignedGroup( assignedGroup );
+       ((Incident) bean).setParentID( this.remedyID );
     }
     else
     {
@@ -144,11 +146,11 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   }
 
   public String addWO() throws Exception {
-    
+
     this.ticketType = IGlobalConstants.TICKET_WORKORDER;
     return this.addTicket();
   }
-  
+
   //// Metodos a sobrecargar de Struts
 
   @Override
@@ -233,20 +235,20 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   }
 
   public String getLastName() {
-	  
+
     return lastname;
   }
-  
+
   public String getPersonID() {
 
     return personID;
   }
-	  
+
   public String getRemedyAction() {
-	  
-    return remedyAction; 
+
+    return remedyAction;
   }
-  
+
   public String getTitle() {
 
     return title;
@@ -266,9 +268,9 @@ public class TicketAction extends ActionSupport implements SessionAware  {
 
     return orderType;
   }
-  
+
   public String getServiceType() {
-    
+
     return serviceType;
   }
 
@@ -320,6 +322,11 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   public String getProductLevel02() {
 
     return productLevel02;
+  }
+
+  public String getParentID() {
+
+    return parentID;
   }
 
   public String getProductLevel03() {
@@ -398,27 +405,27 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   }
 
   public void setLastName( String lastname ) {
-	  
+
     this.lastname = lastname;
   }
-  
+
   public void setPersonID( String id ) {
-	  
+
     this.personID = id;
   }
-	  
+
   public void setRemedyAction( String remedyAction ) {
-	  
+
     this.remedyAction = remedyAction;
   }
-  
+
   public void setOrderType( String orderType ) {
 
     this.orderType = orderType;
   }
-  
+
   public void setServiceType( String serviceType ) {
-      
+
     this.serviceType = serviceType;
   }
 
@@ -475,6 +482,11 @@ public class TicketAction extends ActionSupport implements SessionAware  {
   public void setProductLevel03( String productLevel03 ) {
 
     this.productLevel03 = productLevel03;
+  }
+
+  public void setParentID( String mainID ) {
+
+    this.parentID = mainID;
   }
 
   public void setTitleFieldErrror( String titleFieldErrror ) {
